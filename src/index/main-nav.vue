@@ -1,19 +1,17 @@
 <template>
-    <div id="app">
-        zsw.jp
-
-        <main-nav></main-nav>
+    <div id="main-nav">
+        main nav
     </div>
 </template>
 
 <style lang="sass">
-#app
+#main-nav
     color: #111
 </style>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-    el: '#app'
+    el: '#main-nav'
 })
 </script>

@@ -6,6 +6,7 @@ module.exports = {
         index: {
             entry: 'src/index/index.vue',
             title: 'zsw.jp - @mkgask web site.',
+            chunks: ['main-nav']
         }
     }
 }
