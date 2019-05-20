@@ -7,3 +7,7 @@ services:
         volumes:
             - .:/storage/current
             - ../../:/storage/projects
+        ports:
+            - '8080:8080'
+        expose:
+            - '8080'
