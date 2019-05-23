@@ -5,10 +5,18 @@ module.exports = {
 
     pages: {
         index: {
-            entry: 'src/index/index.vue',
+            entry: 'src/index.ts',
             template: 'src/index.template.html',
             title: 'zsw.jp - @mkgask web site.',
             chunks: ['chunk-vendors', 'chunk-common', 'main-nav']
+        }
+    },
+
+    configureWebpack: {
+        resolve: {
+            alias: {
+                'vue$': 'vue/dist/vue.esm.js'
+            }
         }
     }
 }
