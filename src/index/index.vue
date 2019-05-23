@@ -1,8 +1,6 @@
 <template>
-    <div id="app">
-        zsw.jp
-
-        <main-nav></main-nav>
+    <div id="index">
+        <span>{{greeting}} zsw.jp</span>
     </div>
 </template>
 
@@ -12,8 +10,11 @@
 </style>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-    el: '#app'
-})
+export default {
+    data: function() {
+        return {
+            greeting: 'Hello'
+        }
+    }
+}
 </script>
