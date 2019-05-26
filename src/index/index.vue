@@ -1,16 +1,22 @@
 <template>
     <div id="index">
-        <span>{{greeting}} zsw.jp</span>
+        <main-nav></main-nav>
     </div>
 </template>
 
 <style lang="sass">
-#app
+#index
     color: #111
 </style>
 
 <script lang="ts">
+import mainNav from './main-nav.vue'
+
 export default {
+    components: {
+        mainNav: mainNav
+    },
+
     data: function() {
         return {
             greeting: 'Hello'
