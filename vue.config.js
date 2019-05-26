@@ -7,8 +7,7 @@ module.exports = {
         index: {
             entry: 'src/index.ts',
             template: 'src/index.template.html',
-            title: 'zsw.jp - @mkgask web site.',
-            chunks: ['chunk-vendors', 'chunk-common', 'main-nav']
+            title: 'zsw.jp - @mkgask web site.'
         }
     },
 
