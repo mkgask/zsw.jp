@@ -3,6 +3,5 @@ import index from './index/index.vue'
 
 new Vue({
     el: '#app',
-
-    components: { index: index }
+    render: h => h(index)
 })
