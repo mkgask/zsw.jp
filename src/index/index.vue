@@ -1,7 +1,7 @@
 <template>
-    <div id="index">
+    <v-app id="index">
         <main-nav></main-nav>
-    </div>
+    </v-app>
 </template>
 
 <style lang="sass">
