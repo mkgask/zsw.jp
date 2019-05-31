@@ -1,7 +1,7 @@
-<template>
-    <v-app id="index">
-        <main-nav></main-nav>
-    </v-app>
+<template lang="pug">
+    v-app#index
+        main-nav
+        top
 </template>
 
 <style lang="sass">
@@ -11,10 +11,12 @@
 
 <script lang="ts">
 import mainNav from './main-nav.vue'
+import top from './top.vue'
 
 export default {
     components: {
-        mainNav: mainNav
+        mainNav: mainNav,
+        top: top
     },
 
     data: function() {
