@@ -1,7 +1,7 @@
 module.exports = {
     outputDir: 'docs',
-    assetsDir: 'assets',
-    publicPath: 'assets',
+    assetsDir: './',
+    publicPath: './',
 
     pages: {
         index: {
