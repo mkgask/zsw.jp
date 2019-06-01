@@ -7,6 +7,7 @@
 <style lang="sass">
 #top
     width: 100vw
+    height: 100vh
     text-align: center
 .site_tile
     display: inline-block
@@ -14,6 +15,7 @@
     font-family: 'Gloria Hallelujah', cursive
     font-size: 10em
     color: #fff
+    margin-bottom: 0.5em
 </style>
 
 <script lang="ts">
