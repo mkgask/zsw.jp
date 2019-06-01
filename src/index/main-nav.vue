@@ -12,6 +12,7 @@
 <style lang="sass">
 #main-nav
     position: absolute
+    z-index: 1000
     top: 5%
     left: 0
     width: 90px
