@@ -6,6 +6,7 @@
 
 <style lang="sass">
 #index
+    position: relative
     color: #111
 </style>
 
@@ -21,7 +22,6 @@ export default {
 
     data: function() {
         return {
-            greeting: 'Hello'
         }
     }
 }
