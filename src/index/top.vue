@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-parallax#top(height="100%")
+    v-parallax#top(height="100%",:src="require('@/images/starlight.jpg')")
         span.site_tile zsw.jp
         span.site_description 本サイトは みかげあすか のポートフォリオサイトです。
 </template>
