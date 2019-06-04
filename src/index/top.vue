@@ -1,14 +1,14 @@
 <template lang="pug">
-    v-parallax#top(height="100%",:src="require('@/images/starlight.jpg')")
+    v-parallax#top(:height="windowHeight",:src="require('@/images/starlight.jpg')")
         span.site_tile zsw.jp
         span.site_description 本サイトは みかげあすか のポートフォリオサイトです。
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
 #top
     width: 100vw
-    height: 100vh
     text-align: center
+
 .site_tile
     display: inline-block
     vertical-align: center
@@ -25,7 +25,19 @@ export default {
 
     data: function() {
         return {
+            windowHeight: 0
         }
+    },
+
+    mounted: function() {
+        let my = this
+        this.windowHeight = window.innerHeight
+        console.log('this.windowHeight = ' + this.windowHeight)
+
+        window.addEventListener('resize', () => {
+            my.windowHeight = window.innerHeight
+            console.log('my.windowHeight = ' + my.windowHeight)
+        })
     }
 }
 </script>
