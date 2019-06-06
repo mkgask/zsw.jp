@@ -9,9 +9,9 @@
         v-btn.mainnav_twitter(href="#Twitter",color="info",ripple=true,block=true) Twitter
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
 #main-nav
-    position: absolute
+    position: fixed
     z-index: 1000
     top: 5%
     left: 0
