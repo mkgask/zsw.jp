@@ -30,14 +30,15 @@ export default {
     },
 
     mounted: function() {
-        let my = this
         this.windowHeight = window.innerHeight
-        console.log('this.windowHeight = ' + this.windowHeight)
+        window.addEventListener('resize', this.onWindowResize)
+    },
 
-        window.addEventListener('resize', () => {
-            my.windowHeight = window.innerHeight
-            console.log('my.windowHeight = ' + my.windowHeight)
-        })
+    methods: {
+        onWindowResize: function() {
+            this.windowHeight = window.innerHeight
+        }
     }
+
 }
 </script>
