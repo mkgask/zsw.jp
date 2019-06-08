@@ -1,6 +1,6 @@
 <template lang="pug">
     div#main-nav
-        v-btn.mainnav_zswjp(href="./",ripple=true,block=true) zsw.jp
+        v-btn.mainnav_zswjp(href="#Top",ripple=true,block=true) zsw.jp
         v-btn.mainnav_results(href="#Results",ripple=true,block=true) Results
         v-btn.mainnav_game(href="#Game",color="error",ripple=true,block=true) Game
         v-btn.mainnav_movie(href="#Movie",color="warning",ripple=true,block=true) Movie
@@ -23,6 +23,7 @@
 
 #main-nav a.mainnav_zswjp
     text-transform: lowercase
+    border-right: 10px #999 solid
 </style>
 
 <script lang="ts">
