@@ -1,7 +1,8 @@
 <template lang="pug">
-    v-parallax#top(:height="windowHeight",:src="require('@/images/starlight.jpg')")
+    <v-parallax id="Top" :height="windowHeight" :src="require('@/images/starlight.jpg')" v-resize="onWindowResize">
         span.site_tile zsw.jp
         span.site_description 本サイトは みかげあすか のポートフォリオサイトです。
+    </v-parallax>
 </template>
 
 <style scoped lang="sass">
@@ -28,10 +29,14 @@ export default {
             windowHeight: 0
         }
     },
-
+/*
     mounted: function() {
         this.windowHeight = window.innerHeight
         window.addEventListener('resize', this.onWindowResize)
+    },
+*/
+    mounted: function() {
+        this.onWindowResize()
     },
 
     methods: {
