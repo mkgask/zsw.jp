@@ -71,18 +71,28 @@ export default {
         return {
             list: [
                 {
+                    type: 'github',
                     url: 'https://github.com/mkgask/zsw.jp',
                     image: 'https://github.com/fluidicon.png',
                     title: 'zsw.jp',
                     body: '本サイトのコードです。DockerでVue CLI 3を利用し静的サイトとして生成しています。'
                 },
                 {
+                    type: 'niconico',
+                    url: 'https://www.nicovideo.jp/watch/sm35011267',
+                    image: '',
+                    title: '【琴葉姉妹誕生祭2019】琴葉にしてあげる♪【静止画MAD】',
+                    body: ''
+                },
+                {
+                    type: 'unityroom',
                     url: 'https://unityroom.com/games/unitychan-with-darkmaze',
                     image: 'https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/icon/6539/Thumnail_2.png',
                     title: 'Unityちゃんと闇の迷宮',
                     body: 'Unityで製作したWebGLのゲームです。まず完成させる事に主眼を置き、移動とバトルの基本要素だけです。'
                 },
                 {
+                    type: 'github',
                     url: 'https://github.com/mkgask/UnityChan-with-DarkMaze',
                     image: 'https://github.com/fluidicon.png',
                     title: 'Unityちゃんと闇の迷宮（GitHub）',
