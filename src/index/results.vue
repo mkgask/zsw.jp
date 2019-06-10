@@ -8,7 +8,7 @@
 </template>
 
 <style lang="sass">
-#results .v-parallax__content
+#Results .v-parallax__content
     display: flex
     flex-direction: row
     justify-content: center
@@ -17,7 +17,7 @@
 </style>
 
 <style scoped lang="sass">
-#results
+#Results
     width: 100vw
     height: 100vh
     text-align: center

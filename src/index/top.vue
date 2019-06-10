@@ -6,7 +6,7 @@
 </template>
 
 <style scoped lang="sass">
-#top
+#Top
     width: 100vw
     text-align: center
 

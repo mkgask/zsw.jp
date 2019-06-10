@@ -1,5 +1,5 @@
 <template lang="pug">
-    div#main-nav
+    div#MainNav
         v-btn.mainnav_zswjp(href="#Top",ripple=true,block=true) zsw.jp
         v-btn.mainnav_results(href="#Results",ripple=true,block=true) Results
         v-btn.mainnav_game(href="#Game",color="error",ripple=true,block=true) Game
@@ -10,7 +10,7 @@
 </template>
 
 <style scoped lang="sass">
-#main-nav
+#MainNav
     position: fixed
     z-index: 1000
     top: 5%
@@ -18,10 +18,10 @@
     width: 90px
     font-family: "Kosugi Maru"
 
-#main-nav a
+#MainNav a
     text-transform: capitalize
 
-#main-nav a.mainnav_zswjp
+#MainNav a.mainnav_zswjp
     text-transform: lowercase
     border-right: 10px #999 solid
 </style>
