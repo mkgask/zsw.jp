@@ -1,10 +1,11 @@
 <template lang="pug">
     v-parallax#Results(height="100%")
         div.list_title 制作実績
-        a.content_box(v-for="content in list",:href="content.url",:style="{ backgroundImage: 'url(' + content.image + ')' }")
-            span.content_text
+        v-card.content_box(v-for="content, index in list",:key="index",:href="content.url",:style="{ backgroundImage: 'url(' + content.image + ')' }")
+            span.content_text(v-if="content.type != 'niconico'")
                 span.content_title {{content.title}}
                 span.content_body {{content.body}}
+            iframe.content_niconico(v-if="content.type == 'niconico'",src="https://ext.nicovideo.jp/thumb/sm35011267",scrolling="no")
 </template>
 
 <style lang="sass">
@@ -34,27 +35,31 @@
 .content_box
     width: 48%
     margin: 1%
-    height: 120px
-    border: 1px #666 solid
-    border-radius: 10px
-    padding: 1em
-    background: left center transparent no-repeat
-    background-size: contain
+    min-height: 176px
     text-decoration: none
+    overflow: hidden
+    background: left center #fff no-repeat
+    background-size: contain
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff
 
 .content_title
     display: inline-block
     width: 100%
-    padding-left: 33.333%
+    padding: 1em 0 0.5em 33.333%
     text-align: left
     font-weight: bold
 
 .content_body
     display: inline-block
     width: 100%
-    padding-left: 33.333%
+    padding: 0.5em 0 1em 33.333%
     text-align: left
     color: #111
+
+.content_niconico
+    width: 100%
+    height: 176px
+    border: none
 </style>
 
 <script lang="ts">
