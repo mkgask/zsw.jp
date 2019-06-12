@@ -1,12 +1,40 @@
 <template lang="pug">
     div#MainNav
-        v-btn.mainnav_zswjp(href="#Top",ripple=true,block=true,:class="[selected == 'top' ? 'selected' : '']",@click="select('top')") zsw.jp
-        v-btn.mainnav_results(href="#Results",ripple=true,block=true,:class="[selected == 'results' ? 'selected' : '']",@click="select('results')") Results
-        v-btn.mainnav_game(href="#Game",color="error",ripple=true,block=true,:class="[selected == 'game' ? 'selected' : '']",@click="select('game')") Game
-        v-btn.mainnav_movie(href="#Movie",color="warning",ripple=true,block=true,:class="[selected == 'movie' ? 'selected' : '']",@click="select('movie')") Movie
-        v-btn.mainnav_github(href="#GitHub",color="black",ripple=true,block=true,dark,:class="[selected == 'github' ? 'selected' : '']",@click="select('github')") GitHub
-        v-btn.mainnav_qiita(href="#Qiita",color="success",ripple=true,block=true,:class="[selected == 'qiita' ? 'selected' : '']",@click="select('qiita')") Qiita
-        v-btn.mainnav_twitter(href="#Twitter",color="info",ripple=true,block=true,:class="[selected == 'twitter' ? 'selected' : '']",@click="select('twitter')") Twitter
+        v-btn.mainnav_zswjp(
+            href="#Top", ripple=true, block=true,
+            :class="[selected == 'top' ? 'selected' : '']",
+            @click="select('top')"
+        ) zsw.jp
+        v-btn.mainnav_results(
+            href="#Results", ripple=true, block=true,
+            :class="[selected == 'results' ? 'selected' : '']",
+            @click="select('results')"
+        ) Results
+        v-btn.mainnav_game(
+            href="#Game", color="error", ripple=true, block=true,
+            :class="[selected == 'game' ? 'selected' : '']",
+            @click="select('game')"
+        ) Game
+        v-btn.mainnav_movie(
+            href="#Movie", color="warning", ripple=true, block=true,
+            :class="[selected == 'movie' ? 'selected' : '']",
+            @click="select('movie')"
+        ) Movie
+        v-btn.mainnav_github(
+            href="#GitHub", color="black", ripple=true, block=true, dark,
+            :class="[selected == 'github' ? 'selected' : '']",
+            @click="select('github')"
+        ) GitHub
+        v-btn.mainnav_qiita(
+            href="#Qiita", color="success", ripple=true, block=true,
+            :class="[selected == 'qiita' ? 'selected' : '']",
+            @click="select('qiita')"
+        ) Qiita
+        v-btn.mainnav_twitter(
+            href="#Twitter", color="info", ripple=true, block=true,
+            :class="[selected == 'twitter' ? 'selected' : '']",
+            @click="select('twitter')"
+        ) Twitter
 </template>
 
 <style scoped lang="sass">
