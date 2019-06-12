@@ -96,14 +96,28 @@ export default {
                     url: 'https://unityroom.com/games/unitychan-with-darkmaze',
                     image: 'https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/icon/6539/Thumnail_2.png',
                     title: 'Unityちゃんと闇の迷宮',
-                    body: 'Unityで製作したWebGLのゲームです。まず完成させる事に主眼を置き、移動とバトルの基本要素だけです。'
+                    body: 'Unityで製作したWebGLのゲームです。まず完成させる事に主眼を置き、移動とバトルの基本要素だけを実装しています。'
                 },
                 {
                     type: 'github',
                     url: 'https://github.com/mkgask/UnityChan-with-DarkMaze',
                     image: 'https://github.com/fluidicon.png',
-                    title: 'Unityちゃんと闇の迷宮（GitHub）',
+                    title: 'UnityChan-with-DarkMaze',
                     body: 'Unityちゃんと闇の迷宮のコード（一部。公開できるもののみ）です。UniRxとDDDを分かる範囲で利用しています。'
+                },
+                {
+                    type: 'qiita',
+                    url: 'https://qiita.com/mkgask/items/8d66dcada58a485e3585',
+                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    title: 'Chrome58以降でハネられないSHA-2でオレオレ認証局署名のあるオレオレ証明書 - Qiita',
+                    body: 'web pushのローカルテスト用に環境を構築した際のメモです。'
+                },
+                {
+                    type: 'qiita',
+                    url: 'https://qiita.com/mkgask/items/d984f7f4d94cc39d8e3c',
+                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    title: 'PythonでのDependency Injection 依存性の注入',
+                    body: 'DIについてそこそこ分かってきたのでPythonを例にとって説明してみたものです。'
                 },
 
             ]
