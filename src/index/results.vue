@@ -40,7 +40,7 @@
     color: #111
 
 .content_box
-    width: 48%
+    width: 31.333%
     margin: 1%
     min-height: 176px
     text-decoration: none
@@ -52,14 +52,14 @@
 .content_title
     display: inline-block
     width: 100%
-    padding: 1em 0 0.5em 33.333%
+    padding: 1em 0 0.5em 50%
     text-align: left
     font-weight: bold
 
 .content_body
     display: inline-block
     width: 100%
-    padding: 0.5em 0 1em 33.333%
+    padding: 0.5em 0 1em 50%
     text-align: left
     color: #111
 
