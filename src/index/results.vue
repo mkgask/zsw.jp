@@ -1,6 +1,6 @@
 <template lang="pug">
     v-parallax#Results(height="100%")
-        div.list_title 制作実績
+        div.list_title 実績
         v-card.content_box(
             v-for="content, index in list", :key="index",
             :href="content.url",
