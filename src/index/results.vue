@@ -1,11 +1,18 @@
 <template lang="pug">
     v-parallax#Results(height="100%")
         div.list_title 制作実績
-        v-card.content_box(v-for="content, index in list",:key="index",:href="content.url",:style="{ backgroundImage: 'url(' + content.image + ')' }")
-            span.content_text(v-if="content.type != 'niconico'")
+        v-card.content_box(
+            v-for="content, index in list", :key="index",
+            :href="content.url",
+            :style="{ backgroundImage: 'url(' + content.image + ')' }"
+        )
+            span.content_text(v-show="content.type != 'niconico'")
                 span.content_title {{content.title}}
                 span.content_body {{content.body}}
-            iframe.content_niconico(v-if="content.type == 'niconico'",src="https://ext.nicovideo.jp/thumb/sm35011267",scrolling="no")
+            iframe.content_niconico(
+                v-show="content.type == 'niconico'", scrolling="no"
+                src="https://ext.nicovideo.jp/thumb/sm35011267",
+            )
 </template>
 
 <style lang="sass">
