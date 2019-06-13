@@ -5,7 +5,7 @@
         results
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
 #index
     position: relative
     color: #111
