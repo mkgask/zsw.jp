@@ -12,6 +12,7 @@
 </style>
 
 <script lang="ts">
+import global from './global.vue'
 import mainNav from './main-nav.vue'
 import top from './top.vue'
 import results from './results.vue'
