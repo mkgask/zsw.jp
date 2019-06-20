@@ -5,11 +5,11 @@
             :class="[selected == 'top' ? 'selected' : '']",
             @click="select('top')"
         ) zsw.jp
-        v-btn.mainnav_results(
-            href="#Results", ripple=true, block=true,
-            :class="[selected == 'results' ? 'selected' : '']",
-            @click="select('results')"
-        ) Results
+        v-btn.mainnav_pickup(
+            href="#Pickup", ripple=true, block=true,
+            :class="[selected == 'pickup' ? 'selected' : '']",
+            @click="select('pickup')"
+        ) Pickup
         v-btn.mainnav_game(
             href="#Game", ripple=true, block=true,
             :class="[selected == 'game' ? 'selected' : '']",
