@@ -1,6 +1,6 @@
 <template lang="pug">
-    v-parallax#Results(height="100%")
-        div.list_title 実績
+    <v-parallax id="Results" :height="windowHeight" :src="require('@/images/origami.png')" v-resize="onWindowResize">
+        div.list_title ピックアップ
         v-card.content_box(
             v-for="content, index in list", :key="index",
             :href="content.url",
@@ -13,6 +13,7 @@
                 v-show="content.type == 'niconico'", scrolling="no"
                 src="https://ext.nicovideo.jp/thumb/sm35011267",
             )
+    </v-parallax>
 </template>
 
 <style lang="sass">
@@ -73,6 +74,8 @@
 export default {
     data: function() {
         return {
+            windowHeight: 0,
+
             display_num: 6,
 
             per_page: 6,
@@ -110,7 +113,7 @@ export default {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/8d66dcada58a485e3585',
                     image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
-                    title: 'Chrome58以降でハネられないSHA-2でオレオレ認証局署名のあるオレオレ証明書 - Qiita',
+                    title: 'Chrome58以降でハネられないSHA-2でオレオレ認証局署名のあるオレオレ証明書',
                     body: 'web pushのローカルテスト用に環境を構築した際のメモです。'
                 },
                 {
@@ -120,9 +123,41 @@ export default {
                     title: 'PythonでのDependency Injection 依存性の注入',
                     body: 'DIについてそこそこ分かってきたのでPythonを例にとって説明してみたものです。'
                 },
+                {
+                    type: 'qiita',
+                    url: 'https://qiita.com/mkgask/items/7578bb0f9c646dbb68d0',
+                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    title: 'docker-compose（dockerで十分）でGitHub Pagesローカル開発環境',
+                    body: '本サイトを作るに当たり事前調査したのですが結局使わなかったやつです。'
+                },
+                {
+                    type: 'qiita',
+                    url: 'https://qiita.com/mkgask/items/0bf9c26dc96e7b0b45ac',
+                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    title: 'Windowsで音声合成Open JTalk',
+                    body: 'DIについてそこそこ分かってきたのでPythonを例にとって説明してみたものです。'
+                },
+                {
+                    type: 'app',
+                    url: 'https://zsw.jp/perm',
+                    image: 'https://github.com/fluidicon.png',
+                    title: 'Perm',
+                    body: 'プレイリスト再生型アラーム付きメディアプレイヤーです。ペルムと読みます。Qt/C++製です。'
+                }
 
             ]
         }
+    },
+    
+    mounted: function() {
+        this.onWindowResize()
+    },
+
+    methods: {
+        onWindowResize: function() {
+            this.windowHeight = window.innerHeight
+        }
     }
+
 }
 </script>
