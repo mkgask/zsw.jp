@@ -2,7 +2,7 @@
     div#nav
         v-btn.nav_latest(
             ripple=true, block=true,
-            :class="[selected == 'latest' ? 'active' : 'deactive'], [selected == 'menu' ? 'default' : '']"
+            :class="class_latest"
             @click="select('latest')"
         ) Latest
         v-btn.nav_game(
@@ -56,7 +56,8 @@
 #nav .nav_latest.active
     position: fixed
     z-index: 1000
-    right: -30%
+    right: -20%
+    opacity: 1
     bottom: 5%
     background: linear-gradient(to right,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)
     color: #111
@@ -66,6 +67,7 @@
     position: fixed
     z-index: 1000
     right: -30%
+    opacity: 0
     bottom: 5%
     background: linear-gradient(to right,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)
     color: #111
@@ -137,7 +139,7 @@
         right: 0
         opacity: 1
     100%
-        right: 30%
+        right: -30%
         opacity: 0
 
 @keyframes nav_game_animate
@@ -189,7 +191,39 @@ export default {
 
     data: function() {
         return {
-            selected: ''
+            selected: 'menu'
+        }
+    },
+
+    computed: {
+        class_latest: function() {
+            if (this.selected == 'menu') return 'default'
+            if (this.selected == 'latest') return 'active'
+            return 'deactive'
+        },
+        
+        seleced_latest: function() {
+            return this.selected == 'latest'
+        },
+        
+        seleced_game: function() {
+            return this.selected == 'game'
+        },
+        
+        seleced_movie: function() {
+            return this.selected == 'movie'
+        },
+        
+        seleced_app: function() {
+            return this.selected == 'app'
+        },
+        
+        seleced_link: function() {
+            return this.selected == 'link'
+        },
+        
+        seleced_menu: function() {
+            return this.selected == 'menu'
         }
     },
 
