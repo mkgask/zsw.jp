@@ -1,0 +1,52 @@
+#nav .nav_movie.default
+    position: fixed
+    z-index: 1000
+    right: -10%
+    bottom: 5%
+    background: linear-gradient(to right,  rgba(96, 255, 96, 1) 0%, rgba(96, 255, 96, 1) 50%, rgba(96, 255, 96, 0) 100%)
+    color: #111
+    animation: nav_movie_animate 1.2s
+
+#nav .nav_movie.active
+    position: fixed
+    z-index: 1000
+    right: -20%
+    opacity: 1
+    bottom: 5%
+    background: linear-gradient(to right,  rgba(96, 255, 96, 1) 0%, rgba(96, 255, 96, 1) 50%, rgba(96, 255, 96, 0) 100%)
+    color: #111
+    animation: nav_movie_active_animate 1.2s
+
+#nav .nav_movie.deactive
+    position: fixed
+    z-index: 1000
+    right: -30%
+    opacity: 0
+    bottom: 5%
+    background: linear-gradient(to right,  rgba(96, 255, 96, 1) 0%, rgba(96, 255, 96, 1) 50%, rgba(96, 255, 96, 0) 100%)
+    color: #111
+    animation: nav_movie_deactive_animate 1.2s
+
+@keyframes nav_movie_animate
+    0%
+        right: 20%
+        opacity: 0
+    100%
+        right: -10%
+        opacity: 1
+
+@keyframes nav_movie_active_animate
+    0%
+        right: -10%
+        opacity: 1
+    100%
+        right: -20%
+        opacity: 1
+
+@keyframes nav_movie_deactive_animate
+    0%
+        right: -10%
+        opacity: 1
+    100%
+        right: -30%
+        opacity: 0
