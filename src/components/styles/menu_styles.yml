@@ -1,0 +1,18 @@
+latest:
+    default:
+        right : 0
+game:
+    default:
+        right: -5%
+movie:
+    default:
+        right: -10%
+app:
+    default:
+        right: -15%
+link:
+    default:
+        right: -20%
+menu:
+    default:
+        right: -25%

@@ -38,45 +38,8 @@
 </template>
 
 <style scoped lang="stylus">
-
-contents = {
-    latest: {
-        default: {
-            right: 0
-        }
-    }
-
-    game: {
-        default: {
-            right: -5%
-        }
-    }
-
-    movie: {
-        default: {
-            right: -10%
-        }
-    }
-
-    app: {
-        default: {
-            right: -15%
-        }
-    }
-
-    link: {
-        default: {
-            right: -20%
-        }
-    }
-
-    menu: {
-        default: {
-            right: -25%
-        }
-    }
-
-}
+use('utils/yaml.js')
+contents = yaml('src/components/styles/menu_styles.yml')
 
 for key, content in contents
     for key2, styles in content
