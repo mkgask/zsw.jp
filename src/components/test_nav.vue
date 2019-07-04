@@ -41,12 +41,11 @@
 use('utils/yaml.js')
 contents = yaml('src/components/styles/menu_styles.yml')
 
-for key, content in contents
-    for key2, styles in content
-        #nav .nav_{key}.{key2}
-            right: styles.right
-            background: styles.background
-            color: styles.color
+for key, styles in contents
+    #nav .nav_{key}
+        right: styles.right
+        background: styles.background
+        color: styles.color
 
 #nav
     font-family: "Kosugi Maru"
@@ -64,6 +63,11 @@ for key, content in contents
 
 #nav button.active
     right: -20%
+    opacity: 1
+
+#nav button.deactive
+    right: -30%
+    opacity: 0
 
 </style>
 
