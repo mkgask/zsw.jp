@@ -1,10 +1,7 @@
 #nav .nav_app.default
-    background: linear-gradient(to right,  rgba(96, 96, 255, 1) 0%, rgba(96, 96, 255, 1) 50%, rgba(96, 96, 255, 0) 100%)
-    color: #fff
-    animation: nav_app_animate 1.2s
+    animation: nav_app_default_animate 1.2s
 
 #nav .nav_app.active
-    right: -20%
     opacity: 1
     background: linear-gradient(to right,  rgba(96, 96, 255, 1) 0%, rgba(96, 96, 255, 1) 50%, rgba(96, 96, 255, 0) 100%)
     color: #111
@@ -17,7 +14,7 @@
     color: #111
     animation: nav_app_deactive_animate 1.2s
 
-@keyframes nav_app_animate
+@keyframes nav_app_default_animate
     0%
         right: 15%
         opacity: 0

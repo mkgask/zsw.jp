@@ -1,10 +1,7 @@
 #nav .nav_game.default
-    background: linear-gradient(to right,  rgba(255, 96, 96, 1) 0%, rgba(255, 96, 96, 1) 50%, rgba(255, 96, 96, 0) 100%)
-    color: #fff
-    animation: nav_game_animate 1.2s
+    animation: nav_game_default_animate 1.2s
 
 #nav .nav_game.active
-    right: -20%
     opacity: 1
     background: linear-gradient(to right,  rgba(255, 96, 96, 1) 0%, rgba(255, 96, 96, 1) 50%, rgba(255, 96, 96, 0) 100%)
     color: #111
@@ -17,7 +14,7 @@
     color: #111
     animation: nav_game_deactive_animate 1.2s
 
-@keyframes nav_game_animate
+@keyframes nav_game_default_animate
     0%
         right: 25%
         opacity: 0

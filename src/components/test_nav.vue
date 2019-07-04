@@ -45,6 +45,8 @@ for key, content in contents
     for key2, styles in content
         #nav .nav_{key}.{key2}
             right: styles.right
+            background: styles.background
+            color: styles.color
 
 #nav
     font-family: "Kosugi Maru"
@@ -59,6 +61,10 @@ for key, content in contents
     transform: rotate(-75deg)
     padding: 1.2em 0
     font-size: 1.6em
+
+#nav button.active
+    right: -20%
+
 </style>
 
 <style scoped lang="stylus" src="./styles/nav_latest.styl"></style>

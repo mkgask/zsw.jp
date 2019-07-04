@@ -1,10 +1,7 @@
 #nav .nav_link.default
-    background: linear-gradient(to right,  rgba(255, 96, 0, 1) 0%, rgba(255, 96, 0, 1) 50%, rgba(255, 96, 0, 0) 100%)
-    color: #111
-    animation: nav_link_animate 1.2s
+    animation: nav_link_default_animate 1.2s
 
 #nav .nav_link.active
-    right: -20%
     opacity: 1
     background: linear-gradient(to right,  rgba(255, 96, 0, 1) 0%, rgba(255, 96, 0, 1) 50%, rgba(255, 96, 0, 0) 100%)
     color: #111
@@ -17,7 +14,7 @@
     color: #111
     animation: nav_link_deactive_animate 1.2s
 
-@keyframes nav_link_animate
+@keyframes nav_link_default_animate
     0%
         right: 10%
         opacity: 0
