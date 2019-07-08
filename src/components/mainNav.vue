@@ -68,7 +68,6 @@ for key, styles in contents
 #nav button.deactive
     right: -30%
     opacity: 0
-
 </style>
 
 <style scoped lang="stylus" src="./styles/nav_latest.styl"></style>

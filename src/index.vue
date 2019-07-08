@@ -1,8 +1,7 @@
 <template lang="pug">
     v-app#index
-        main-nav
+        nav
         top
-        pickup
 </template>
 
 <style scoped lang="sass">
@@ -13,15 +12,14 @@
 
 <script lang="ts">
 import global from './components/global.vue'
-import mainNav from './components/main-nav.vue'
+import nav from './components/nav.vue'
 import top from './components/top.vue'
 import pickup from './components/pickup.vue'
 
 export default {
     components: {
-        mainNav: mainNav,
-        top: top,
-        pickup: pickup
+        nav: nav,
+        top: top
     },
 
     data: function() {
