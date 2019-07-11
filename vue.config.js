@@ -9,13 +9,6 @@ module.exports = {
             template: 'src/index.template.html',
             title: 'zsw.jp - @mkgask web site.',
             filename: 'index.html'
-        },
-
-        test: {
-            entry: 'src/test.ts',
-            template: 'src/test.template.html',
-            title: 'test - zsw.jp - @mkgask web site.',
-            filename: 'test/index.html'
         }
     },
 
