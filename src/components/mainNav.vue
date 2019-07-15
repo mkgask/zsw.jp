@@ -122,7 +122,7 @@ export default {
     methods: {
         select: function(s = '') {
             this.selected = s
-            this.$router.push({ path: s })
+            this.$router.push(s)
         }
     }
 }

@@ -1,6 +1,5 @@
 <template lang="pug">
-    div#latest
-        span.page_title latest
+    div#menu
 </template>
 
 <style scoped lang="Stylus">

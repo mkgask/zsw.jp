@@ -1,12 +1,15 @@
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Latest from '../pages/latest.vue'
+import menu from '../pages/menu.vue'
+import latest from '../pages/latest.vue'
+
+Vue.use(VueRouter)
 
 export default new VueRouter( {
-    mode: 'history',
-
     routes: [
-        { path: '/', component: {} },
-        { path: 'latest', component: Latest }
+        { path: '/', component: menu },
+        { path: '/menu', component: menu, name: 'menu' },
+        { path: '/latest', component: latest, name: 'latest' }
     ]
 })
