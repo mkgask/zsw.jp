@@ -24,6 +24,28 @@ export default {
 
     data: function() {
         return {
+            route: ''
+        }
+    },
+
+    mounted: function() {
+        if (typeof this.$route.name === 'undefined') {
+            this.route = ''
+        } else {
+            this.route = this.$route.name
+        }
+
+        console.log('mounted route: ' + this.route)
+    },
+
+    watch: {
+        '$route': 'routeUpdate'
+    },
+
+    methods: {
+        routeUpdate: function(to, from) {
+            this.route = to.name
+            console.log('update route: ' + this.route)
         }
     }
 }
