@@ -119,10 +119,17 @@ export default {
         }
     },
 
+    watch: {
+        '$store.getters.get_route': 'routeUpdate'
+    },
+
     methods: {
         select: function(s = '') {
-            this.selected = s
             this.$router.push(s)
+        },
+
+        routeUpdate: function(s) {
+            this.selected = s
         }
     }
 }

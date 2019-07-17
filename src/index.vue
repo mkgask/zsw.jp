@@ -24,18 +24,17 @@ export default {
 
     data: function() {
         return {
-            route: ''
         }
     },
 
     mounted: function() {
-        if (typeof this.$route.name === 'undefined') {
-            this.route = ''
-        } else {
-            this.route = this.$route.name
+        let route = ''
+
+        if (typeof this.$route.name !== 'undefined') {
+            route = this.$route.name
         }
 
-        console.log('mounted route: ' + this.route)
+        this.$store.commit('route_change', route)
     },
 
     watch: {
@@ -44,8 +43,7 @@ export default {
 
     methods: {
         routeUpdate: function(to, from) {
-            this.route = to.name
-            console.log('update route: ' + this.route)
+            this.$store.commit('route_change', to.name)
         }
     }
 }
