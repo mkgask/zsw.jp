@@ -1,0 +1,49 @@
+
+#top
+    width: 100vw
+    text-align: center
+
+.site_tile
+    display: inline-block
+    width: 100%
+    vertical-align: center
+    font-family: 'Gloria Hallelujah', cursive
+    font-size: 10em
+    color: #fff
+    margin-bottom: 0.3em
+    animation: top_title_animate 1.2s
+
+.site_description
+    width: 100%
+
+.top_box
+    padding-bottom: 1em
+    margin-top: -40%
+
+.top_box.active
+    opacity: 1
+    animation: top_box_active_animate 1.2s
+
+.top_box.deactive
+    margin-top: -100%
+    animation: top_box_deactive_animate 1.2s
+
+@keyframes top_box_active_animate
+    0%
+        opacity: 0
+        margin-top: 0
+    100%
+        opacity: 1
+        margin-top: -40%
+
+@keyframes top_box_deactive_animate
+    0%
+        margin-top: -40%
+    100%
+        margin-top: -100%
+
+@keyframes top_title_animate
+    0%
+        margin-bottom: 0.5em
+    100%
+        margin-bottom: 0.3em

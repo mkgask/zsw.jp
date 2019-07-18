@@ -39,37 +39,16 @@
 
 <style scoped lang="stylus">
 use('utils/yaml.js')
-contents = yaml('src/components/styles/menu_styles.yml')
+contents = yaml('src/components/styles/mainNav.yml')
 
 for key, styles in contents
     #nav .nav_{key}
         right: styles.right
         background: styles.background
         color: styles.color
-
-#nav
-    font-family: "Kosugi Maru"
-
-#nav button
-    position: fixed
-    z-index: 1000
-    bottom: 5%
-    text-transform: capitalize
-    width: 100vh
-    max-width: 100vw
-    transform: rotate(-75deg)
-    padding: 1.2em 0
-    font-size: 1.6em
-
-#nav button.active
-    right: -20%
-    opacity: 1
-
-#nav button.deactive
-    right: -30%
-    opacity: 0
 </style>
 
+<style scoped lang="stylus" src="./styles/mainNav.styl"></style>
 <style scoped lang="stylus" src="./styles/nav_latest.styl"></style>
 <style scoped lang="stylus" src="./styles/nav_game.styl"></style>
 <style scoped lang="stylus" src="./styles/nav_movie.styl"></style>
