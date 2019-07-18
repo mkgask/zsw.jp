@@ -49,12 +49,12 @@ for key, styles in contents
 </style>
 
 <style scoped lang="stylus" src="./styles/mainNav.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_latest.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_game.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_movie.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_app.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_link.styl"></style>
-<style scoped lang="stylus" src="./styles/nav_menu.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_latest.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_game.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_movie.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_app.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_link.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_menu.styl"></style>
 
 <script lang="ts">
 import Vue from 'vue';

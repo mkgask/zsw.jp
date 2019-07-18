@@ -2,7 +2,7 @@
     div#menu
 </template>
 
-<style scoped lang="Stylus">
+<style scoped lang="stylus">
 </style>
 
 <script lang="ts">

@@ -5,7 +5,7 @@
         router-view
 </template>
 
-<style scoped lang="sass">
+<style scoped lang="stylus">
 #index
     position: relative
     color: #111
