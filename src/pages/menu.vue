@@ -1,5 +1,5 @@
 <template lang="pug">
-    div#menu
+    section#menu
 </template>
 
 <style scoped lang="stylus">

@@ -1,6 +1,6 @@
 <template lang="pug">
-    div#latest
-        span.page_title latest
+    section#latest
+        h1.page_title Latest
 </template>
 
 <style scoped lang="stylus">

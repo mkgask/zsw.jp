@@ -1,7 +1,7 @@
 <template lang="pug">
     <v-parallax id="top" :height="windowHeight" :src="require('@/images/starlight.jpg')" v-resize="onWindowResize">
-        div.top_box(:class="class_top")
-            span.site_tile zsw.jp
+        section.top_box(:class="class_top")
+            h1.site_tile zsw.jp
             span.site_description 本サイトは みかげあすか のポートフォリオサイトです。
     </v-parallax>
 </template>

@@ -1,5 +1,5 @@
 <template lang="pug">
-    div#nav
+    nav#nav
         v-btn.nav_latest(
             ripple=true, block=true,
             :class="class_latest"
