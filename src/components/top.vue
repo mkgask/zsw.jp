@@ -10,20 +10,20 @@
 
 <script lang="ts">
 export default {
-    data: function() {
+    data: function () {
         return {
             selected: '',
             windowHeight: 0
         }
     },
 
-    mounted: function() {
+    mounted: function () {
         this.onWindowResize()
     },
 
     computed: {
-        class_top: function() {
-            if (this.selected == 'menu') return 'active'
+        class_top: function () {
+            if (this.selected === 'menu') return 'active'
             return 'deactive'
         }
     },
@@ -33,11 +33,11 @@ export default {
     },
 
     methods: {
-        onWindowResize: function() {
+        onWindowResize: function () {
             this.windowHeight = window.innerHeight
         },
 
-        routeUpdate: function(s) {
+        routeUpdate: function (s) {
             this.selected = s
         }
     }

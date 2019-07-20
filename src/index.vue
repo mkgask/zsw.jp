@@ -18,16 +18,17 @@ import top from './components/top.vue'
 
 export default {
     components: {
+        global: global,
         mainNav: mainNav,
         top: top
     },
 
-    data: function() {
+    data: function () {
         return {
         }
     },
 
-    mounted: function() {
+    mounted: function () {
         let route = ''
 
         if (typeof this.$route.name !== 'undefined') {
@@ -42,7 +43,7 @@ export default {
     },
 
     methods: {
-        routeUpdate: function(to, from) {
+        routeUpdate: function (to, from) {
             this.$store.commit('route_change', to.name)
         }
     }

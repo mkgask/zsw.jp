@@ -57,43 +57,41 @@ for key, styles in contents
 <style scoped lang="stylus" src="./styles/mainNav_menu.styl"></style>
 
 <script lang="ts">
-import Vue from 'vue';
-
 export default {
-    data: function() {
+    data: function () {
         return {
             selected: 'menu'
         }
     },
 
     computed: {
-        class_latest: function() {
-            if (this.selected == 'menu') return 'default'
-            if (this.selected == 'latest') return 'active'
+        class_latest: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'latest') return 'active'
             return 'deactive'
         },
 
-        class_game: function() {
-            if (this.selected == 'menu') return 'default'
-            if (this.selected == 'game') return 'active'
+        class_game: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'game') return 'active'
             return 'deactive'
         },
 
-        class_movie: function() {
-            if (this.selected == 'menu') return 'default'
-            if (this.selected == 'movie') return 'active'
+        class_movie: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'movie') return 'active'
             return 'deactive'
         },
 
-        class_app: function() {
-            if (this.selected == 'menu') return 'default'
-            if (this.selected == 'app') return 'active'
+        class_app: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'app') return 'active'
             return 'deactive'
         },
 
-        class_link: function() {
-            if (this.selected == 'menu') return 'default'
-            if (this.selected == 'link') return 'active'
+        class_link: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'link') return 'active'
             return 'deactive'
         }
     },
@@ -103,11 +101,11 @@ export default {
     },
 
     methods: {
-        select: function(s = '') {
+        select: function (s = '') {
             this.$router.push(s)
         },
 
-        routeUpdate: function(s) {
+        routeUpdate: function (s) {
             this.selected = s
         }
     }

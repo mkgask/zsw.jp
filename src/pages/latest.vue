@@ -74,7 +74,7 @@
 
 <script lang="ts">
 export default {
-    data: function() {
+    data: function () {
         return {
             list: [
                 {
@@ -85,6 +85,7 @@ export default {
                     title: 'zsw.jp',
                     body: '本サイトのコードです。DockerでVue CLI 3を利用し静的サイトとして生成しています。',
                     firsttime: '2019/07/20',
+                    updatetime: ''
                 },
                 {
                     type: 'niconico',
@@ -94,6 +95,7 @@ export default {
                     title: '【琴葉姉妹誕生祭2019】琴葉にしてあげる♪【静止画MAD】',
                     body: '',
                     firsttime: '2019/04/25',
+                    updatetime: ''
                 },
                 {
                     type: 'unityroom',
@@ -103,6 +105,7 @@ export default {
                     title: 'Unityちゃんと闇の迷宮',
                     body: 'Unityで製作したWebGLとWindowsのゲームです。まず完成させる事に主眼を置き、移動とバトルの基本要素だけを実装しています。',
                     firsttime: '2019/03/10',
+                    updatetime: ''
                 },
                 {
                     type: 'github',
@@ -112,6 +115,7 @@ export default {
                     title: 'UnityChan-with-DarkMaze',
                     body: 'Unityちゃんと闇の迷宮のコード（一部。公開できるもののみ）です。UniRxとDDDを分かる範囲で利用しています。',
                     firsttime: '2019/03/10',
+                    updatetime: ''
                 },
                 {
                     type: 'qiita',
@@ -121,7 +125,7 @@ export default {
                     title: 'PythonでのDependency Injection 依存性の注入',
                     body: 'DIについてそこそこ分かってきたのでPythonを例にとって説明してみたものです。',
                     firsttime: '2018/07/07',
-                    updatetime: '2018/07/13',
+                    updatetime: '2018/07/13'
                 },
                 {
                     type: 'niconico',
@@ -131,6 +135,7 @@ export default {
                     title: '【琴葉姉妹誕生日2018】Sweets Party!【静止画MAD】',
                     body: '',
                     firsttime: '2018/04/25',
+                    updatetime: ''
                 },
                 {
                     type: 'qiita',
@@ -140,7 +145,7 @@ export default {
                     title: 'docker-compose（dockerで十分）でGitHub Pagesローカル開発環境',
                     body: '本サイトを作るに当たり事前調査したのですが結局使わなかったやつです。',
                     firsttime: '2018/02/24',
-                    updatetime: '2019/05/18',
+                    updatetime: '2019/05/18'
                 },
                 {
                     type: 'qiita',
@@ -150,7 +155,7 @@ export default {
                     title: 'Windowsで音声合成Open JTalk',
                     body: '音声合成ソフトCevioと出自が近しい名工大のOpen JTalkが気になって触ってみた履歴です。',
                     firsttime: '2017/09/09',
-                    updatetime: '2017/09/10',
+                    updatetime: '2017/09/10'
                 },
                 {
                     type: 'qiita',
@@ -160,7 +165,7 @@ export default {
                     title: 'Chrome58以降でハネられないSHA-2でオレオレ認証局署名のあるオレオレ証明書',
                     body: 'web pushのローカルテスト用に環境を構築した際のメモです。',
                     firsttime: '2017/06/30',
-                    updatetime: '2018/08/25',
+                    updatetime: '2018/08/25'
                 },
                 {
                     type: 'app',
@@ -170,7 +175,7 @@ export default {
                     title: 'Perm',
                     body: 'プレイリスト再生型アラーム付きメディアプレイヤーです。ペルムと読みます。Qt/C++製です。',
                     firsttime: '2013/02/10',
-                    updatetime: '2008/11/08',
+                    updatetime: '2008/11/08'
                 }
             ]
         }
