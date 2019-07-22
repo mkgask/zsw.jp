@@ -6,7 +6,7 @@ import latest from '../pages/latest.vue'
 
 Vue.use(VueRouter)
 
-export default new VueRouter( {
+export default new VueRouter({
     mode: 'history',
 
     routes: [

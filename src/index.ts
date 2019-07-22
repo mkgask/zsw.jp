@@ -9,9 +9,10 @@ import index from './index.vue'
 
 Vue.use(vuetify)
 
-new Vue({
-    el: '#app',
+const app = new Vue({
     router,
     store,
     render: h => h(index)
 })
+
+app.$mount('#app')

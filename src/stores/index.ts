@@ -15,7 +15,7 @@ export default new Vuex.Store({
     },
 
     mutations: {
-        route_change(state, r) {
+        route_change (state, r) {
             state.route = r
         }
     }
