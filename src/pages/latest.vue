@@ -128,6 +128,16 @@ export default {
                     updatetime: '2018/07/13'
                 },
                 {
+                    type: 'qiita',
+                    url: 'https://qiita.com/mkgask/items/dcd0f173998168fe5614',
+                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    src: '',
+                    title: 'PythonのKivyで音楽プレイヤー',
+                    body: 'Permを最新の技術で再興させるためのチャレンジです。',
+                    firsttime: '2018/06/03',
+                    updatetime: '2018/06/09'
+                },
+                {
                     type: 'niconico',
                     url: 'https://www.nicovideo.jp/watch/sm33073747',
                     image: '',
