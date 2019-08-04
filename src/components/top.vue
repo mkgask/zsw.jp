@@ -12,7 +12,7 @@
 export default {
     data: function () {
         return {
-            selected: '',
+            selected: 'menu',
             windowHeight: 0
         }
     },

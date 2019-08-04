@@ -29,9 +29,13 @@ export default {
     },
 
     mounted: function () {
-        let route = ''
+        let route = 'menu'
 
-        if (typeof this.$route.name !== 'undefined') {
+        if (
+            typeof this.$route.name !== 'undefined' &&
+            this.$route.name !== null && !this.$route.name &&
+            this.$route.name !== 'undefined' && this.$route.name !== 'null'
+        ) {
             route = this.$route.name
         }
 
