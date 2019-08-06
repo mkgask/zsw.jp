@@ -38,7 +38,7 @@ jobs:
             - npm-{{ checksum "package.json" }}
       - add_ssh_keys:
           fingerprints:
-            - {{SSHKEYS_FINGERPRINTS}}
+            - ${ SSHKEYS_FINGERPRINTS }
       - run: npm install
       - run: git config user.name $GITHUB_NAME
       - run: git config user.email $GITHUB_EMAIL
