@@ -14,21 +14,7 @@ jobs:
             - node_modules
           key: npm-{{ checksum "package.json" }}
       - run: npm run lint
-  build:
-    docker:
-      - image: circleci/node:8
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-          - npm-{{ checksum "package.json" }}
-      - run: npm install
-      - save_cache:
-          paths:
-          - node_modules
-          key: npm-{{ checksum "package.json" }}
-      - run: npm run build
-  deploy:
+  build-deploy:
     docker:
       - image: circleci/node:8
     steps:
@@ -40,24 +26,18 @@ jobs:
           fingerprints:
             - "d4:2d:85:6c:75:e7:26:60:03:d7:14:37:3f:3a:54:d6"
       - run: npm install
+      - run: npm run build
       - run: git config user.name $GITHUB_NAME
       - run: git config user.email $GITHUB_EMAIL
       - run: npm run deploy
 workflows:
   version: 2
-  build-deploy:
+  lint-build-deploy:
     jobs:
       - lint
-      - build:
+      - build-deploy:
           requires:
             - lint
-          filters:
-            branches:
-              only: master
-      - deploy:
-          requires:
-            - build
-            
           filters:
             branches:
               only: master
