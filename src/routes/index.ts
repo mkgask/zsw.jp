@@ -7,8 +7,6 @@ import latest from '../pages/latest.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    mode: 'history',
-
     routes: [
         { path: '/', component: menu },
         { path: '/menu', component: menu, name: 'menu' },
