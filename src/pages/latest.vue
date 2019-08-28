@@ -6,10 +6,10 @@
             v-card.content_box(
                 v-for="content, index in list",
                 :key="index",
-                v-show="index < show_num"
+                v-if="index < show_num"
             )
                 a.content_link(
-                    v-show="index < show_num && content.type != 'niconico'"
+                    v-show="content.type != 'niconico'"
                     :href="content.url",
                     :style="{ backgroundImage: 'url(' + content.image + ')' }"
                 )
@@ -22,7 +22,7 @@
                             span.updatetime(v-show="content.updatetime") {{content.updatetime}}更新
 
                 iframe.content_niconico(
-                    v-show="index < show_num && content.type == 'niconico'",
+                    v-show="content.type == 'niconico'",
                     scrolling="no"
                     :src="content.src",
                 )
