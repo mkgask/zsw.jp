@@ -6,21 +6,33 @@
             v-card.content_box(
                 v-for="content, index in list",
                 :key="index",
-                :href="content.url",
-                :style="{ backgroundImage: 'url(' + content.image + ')' }"
+                v-show="index < show_num"
             )
-                span.content_text(v-show="content.type != 'niconico'")
-                    span.content_title {{content.title}}
-                    span.content_body {{content.body}}
+                a.content_link(
+                    v-show="index < show_num && content.type != 'niconico'"
+                    :href="content.url",
+                    :style="{ backgroundImage: 'url(' + content.image + ')' }"
+                )
+                    span.content_text
+                        span.content_title {{content.title}}
+                        span.content_body {{content.body}}
 
-                    span.datetime
-                        span.firsttime(v-show="content.firsttime") {{content.firsttime}}初出
-                        span.updatetime(v-show="content.updatetime") {{content.updatetime}}更新
+                        span.datetime
+                            span.firsttime(v-show="content.firsttime") {{content.firsttime}}初出
+                            span.updatetime(v-show="content.updatetime") {{content.updatetime}}更新
+
                 iframe.content_niconico(
-                    v-show="content.type == 'niconico'",
+                    v-show="index < show_num && content.type == 'niconico'",
                     scrolling="no"
                     :src="content.src",
                 )
+
+            div.pager_box
+                span.read_next(
+                    @click="readNext"
+                    v-show="show_num < list.length"
+                ) 次を見る
+
 </template>
 
 <style scoped lang="stylus">
@@ -37,28 +49,34 @@
     min-height 176px
     text-decoration none
     overflow hidden
+
+.content_link
+    display inline-block
+    width 100%
+    height 100%
     background left center #fff no-repeat
     background-size contain
+    color #111
     text-shadow 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff
 
 .content_title
-    display: inline-block
-    width: 100%
-    padding: 1em 0 0.5em 40%
-    text-align: left
-    font-weight: bold
+    display inline-block
+    width 100%
+    padding 1em 0 0.5em 40%
+    text-align left
+    font-weight bold
 
 .content_body
-    display: inline-block
-    width: 100%
-    padding: 0.5em 0 1em 40%
-    text-align: left
+    display inline-block
+    width 100%
+    padding 0.5em 0 1em 40%
+    text-align left
 
 .datetime
-    display: inline-block
-    width: 100%
-    padding: 0.5em 0 1em 40%
-    text-align: right
+    display inline-block
+    width 100%
+    padding 0.5em 0 1em 40%
+    text-align right
 
 .firsttime
     margin-right 1em
@@ -67,9 +85,23 @@
     margin-right 1em
 
 .content_niconico
-    width: 100%
-    height: 176px
-    border: none
+    width 100%
+    height 176px
+    border none
+
+.pager_box
+    width 100%
+    margin 1em 0
+    text-align center
+
+.read_next
+    padding 0.5em 3em
+    border 1px #666 solid
+    cursor pointer
+
+.read_next:hover
+    background-color #111
+    color #fff
 </style>
 
 <script lang="ts">
@@ -187,7 +219,21 @@ export default {
                     firsttime: '2013/02/10',
                     updatetime: '2008/11/08'
                 }
-            ]
+            ],
+
+            show_num: 10,
+            per_page: 10
+        }
+    },
+
+    methods: {
+        readNext: function () {
+            this.show_num += this.per_page
+
+            this.scroll({
+                top: this.$el.offsetTop + 223.2,
+                behavior: 'smooth'
+            })
         }
     }
 }
