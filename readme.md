@@ -1,4 +1,6 @@
 
+[![CircleCI](https://circleci.com/gh/mkgask/zsw.jp.svg?style=svg)](https://circleci.com/gh/mkgask/zsw.jp)
+
 ## available commands
 
 ### before login
