@@ -33,8 +33,11 @@ export default {
 
         if (
             typeof this.$route.name !== 'undefined' &&
-            this.$route.name !== null && !this.$route.name &&
-            this.$route.name !== 'undefined' && this.$route.name !== 'null'
+            this.$route.name !== null &&
+            this.$route.name !== false &&
+            this.$route.name !== 'undefined' &&
+            this.$route.name !== 'null' &&
+            this.$route.name !== 'false'
         ) {
             route = this.$route.name
         }
