@@ -45,7 +45,7 @@ export default {
                 {
                     type: 'github',
                     url: 'https://github.com/mkgask/zsw.jp',
-                    image: 'https://github.com/fluidicon.png',
+                    image: require('@/images/GitHub_Logo.png'),
                     src: '',
                     title: 'zsw.jp',
                     body: '本サイトのコードです。DockerでVue CLI 3を利用し静的サイトとして生成しています。',
@@ -65,7 +65,7 @@ export default {
                 {
                     type: 'unityroom',
                     url: 'https://unityroom.com/games/unitychan-with-darkmaze',
-                    image: 'https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/icon/6539/Thumnail_2.png',
+                    image: require('@/images/UniDark/Thumnail2.jpg'),
                     src: '',
                     title: 'Unityちゃんと闇の迷宮',
                     body: 'Unityで製作したWebGLとWindowsのゲームです。まず完成させる事に主眼を置き、移動とバトルの基本要素だけを実装しています。',
@@ -75,7 +75,7 @@ export default {
                 {
                     type: 'github',
                     url: 'https://github.com/mkgask/UnityChan-with-DarkMaze',
-                    image: 'https://github.com/fluidicon.png',
+                    image: require('@/images/GitHub_Logo.png'),
                     src: '',
                     title: 'UnityChan-with-DarkMaze',
                     body: 'Unityちゃんと闇の迷宮のコード（一部。公開できるもののみ）です。UniRxとDDDを分かる範囲で利用しています。',
@@ -85,7 +85,7 @@ export default {
                 {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/d984f7f4d94cc39d8e3c',
-                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    image: require('@/images/qiita-square.png'),
                     src: '',
                     title: 'PythonでのDependency Injection 依存性の注入',
                     body: 'DIについてそこそこ分かってきたのでPythonを例にとって説明してみたものです。',
@@ -95,7 +95,7 @@ export default {
                 {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/dcd0f173998168fe5614',
-                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    image: require('@/images/qiita-square.png'),
                     src: '',
                     title: 'PythonのKivyで音楽プレイヤー',
                     body: 'Permを最新の技術で再興させるためのチャレンジです。',
@@ -115,7 +115,7 @@ export default {
                 {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/7578bb0f9c646dbb68d0',
-                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    image: require('@/images/qiita-square.png'),
                     src: '',
                     title: 'docker-compose（dockerで十分）でGitHub Pagesローカル開発環境',
                     body: '本サイトを作るに当たり事前調査したのですが結局使わなかったやつです。',
@@ -125,7 +125,7 @@ export default {
                 {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/0bf9c26dc96e7b0b45ac',
-                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    image: require('@/images/qiita-square.png'),
                     src: '',
                     title: 'Windowsで音声合成Open JTalk',
                     body: '音声合成ソフトCevioと出自が近しい名工大のOpen JTalkが気になって触ってみた履歴です。',
@@ -135,7 +135,7 @@ export default {
                 {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/8d66dcada58a485e3585',
-                    image: 'https://cdn.qiita.com/assets/qiita-fb-2887e7b4aad86fd8c25cea84846f2236.png',
+                    image: require('@/images/qiita-square.png'),
                     src: '',
                     title: 'Chrome58以降でハネられないSHA-2でオレオレ認証局署名のあるオレオレ証明書',
                     body: 'web pushのローカルテスト用に環境を構築した際のメモです。',
@@ -145,7 +145,7 @@ export default {
                 {
                     type: 'app',
                     url: 'zsw.jp/software/perm',
-                    image: 'http://zsw.jp/downloads/perm/034/ss1.png',
+                    image: require('@/images/Perm/ss1.png'),
                     src: '',
                     title: 'Perm',
                     body: 'プレイリスト再生型アラーム付きメディアプレイヤーです。ペルムと読みます。Qt/C++製です。',

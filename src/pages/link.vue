@@ -65,7 +65,7 @@ export default {
                 {
                     type: 'unityroom',
                     url: 'https://unityroom.com/users/mkgask',
-                    image: 'https://object-storage.tyo1.conoha.io/v1/nc_df3bdbc45bc04950b558834f5728517a/unityroom_production/icon/6539/Thumnail_2.png',
+                    image: require('@/images/UniDark/Thumnail2.jpg'),
                     src: '',
                     title: 'unityroom',
                     body: 'Unityで製作したWebGLのゲームを置いています。無料公開はだいたいここに上げていく予定です。',
