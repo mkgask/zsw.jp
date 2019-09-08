@@ -3,7 +3,14 @@
 
 <style lang="stylus">
 html
-    scroll-behavior: smooth
+    scroll-behavior smooth
+
+*
+    box-sizing border-box
+
+a
+span
+    display inline-block
 
 .application--wrap
     position relative
