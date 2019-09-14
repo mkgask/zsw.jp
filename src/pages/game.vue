@@ -33,8 +33,8 @@
                     | ・宝箱に触れると、宝箱を開きます。<br>
                     | ・宝箱から出てきた武器を選択すると、そこへ移動し武器を拾って変更します。<br>
                     | ・敵を倒すと経験値を獲得し、一定以上貯める毎にレベルアップしていきます。<br>
-                    | ・敵から攻撃されるとダメージを受けます。HPがゼロになると負けとなり、フロア数を戻されます。<br>
-                    | ・敵を倒したり、武器を変更したり、ルームクリアしたりのタイミングで自動セーブされます。<br>
+                    | ・敵から攻撃されるとダメージを受けます。HPがゼロになると負けとなり、いくつかルームを戻されます。<br>
+                    | ・敵を倒したり、武器を変更したり、ルームクリアしたりのタイミングでオートセーブされます。<br>
                     | ・ルームクリアし、次のルームへ移動すると、敵が強くなったり敵の数や種類が増えたり、宝箱から出てくる武器も変わったりします。<br>
 
             div.tips_box
@@ -50,7 +50,7 @@
                     span.tips_val
                         | ・攻撃のタイミングで敵が真正面に居ないとダメージが入りません。<br>
                         | ・同様に敵の攻撃のタイミングの時に真正面に居ないようにすれば、ダメージを受けずにすみます。<br>
-                        | ・ダメージモーション中は動けません。敵の数が増えてきた時、囲まれないように気をつける必要があります。<br>
+                        | ・ダメージを受けると移動がキャンセルされます。敵の数が増えてきた時、囲まれないように気をつける必要があります。<br>
                 div.tip_box
                     span.tips_key
                         | Tips3 ドアには違いがある
@@ -58,11 +58,11 @@
                         | ・次のルームへ移動する時、左右のドアのどちらを選ぶかで敵に変化があります。<br>
 
             div.ss_box
-                span.ss.ss1(@click="onLightboxlikeOpen")
+                span.ss.ss1(@click="onLightboxlikeOpen(require('@/images/UniDark/ss1.jpg'))")
                     img.ss_image(:src="require('@/images/UniDark/ss1.jpg')")
-                span.ss.ss2(@click="onLightboxlikeOpen")
+                span.ss.ss2(@click="onLightboxlikeOpen(require('@/images/UniDark/ss2.jpg'))")
                     img.ss_image(:src="require('@/images/UniDark/ss2.jpg')")
-                span.ss.ss3(@click="onLightboxlikeOpen")
+                span.ss.ss3(@click="onLightboxlikeOpen(require('@/images/UniDark/ss3.jpg'))")
                     img.ss_image(:src="require('@/images/UniDark/ss3.jpg')")
                 span.ss.ss4(@click="onLightboxlikeOpen(require('@/images/UniDark/ss4.jpg'))")
                     img.ss_image(:src="require('@/images/UniDark/ss4.jpg')")
@@ -71,7 +71,7 @@
                 a.play_button(href="https://unityroom.com/games/unitychan-with-darkmaze") Unityroomで遊べます
 
             div.lightboxlike(v-show="lightboxlike_show",@click="onLightboxlikeClose")
-                span.close_button
+                span.lightboxlike_close_button
                 img.lightboxlike_image(:src="lightboxlike_image")
 
 </template>
