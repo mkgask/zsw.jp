@@ -5,6 +5,7 @@ import menu from '../pages/menu.vue'
 import latest from '../pages/latest.vue'
 import link from '../pages/link.vue'
 import game from '../pages/game.vue'
+import movie from '../pages/movie.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,7 @@ export default new VueRouter({
         { path: '/menu', component: menu, name: 'menu' },
         { path: '/latest', component: latest, name: 'latest' },
         { path: '/link', component: link, name: 'link' },
-        { path: '/game', component: game, name: 'game' }
+        { path: '/game', component: game, name: 'game' },
+        { path: '/movie', component: movie, name: 'movie' }
     ]
 })
