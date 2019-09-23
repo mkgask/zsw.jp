@@ -4,8 +4,8 @@
             h1.page_title Latest
 
             v-card.content_box(
-                v-for="content, index in list",
-                :key="index",
+                v-for="content, index in list"
+                :key="index"
                 v-if="index < show_num"
             )
                 a.content_link(
@@ -22,9 +22,9 @@
                             span.updatetime(v-show="content.updatetime") {{content.updatetime}}更新
 
                 iframe.content_niconico(
-                    v-show="content.type == 'niconico'",
+                    v-show="content.type == 'niconico'"
                     scrolling="no"
-                    :src="content.src",
+                    :src="content.src"
                 )
 
             div.pager_box
@@ -83,6 +83,16 @@ export default {
                     updatetime: ''
                 },
                 {
+                    type: 'niconico',
+                    url: 'https://www.nicovideo.jp/watch/sm33696807',
+                    image: '',
+                    src: 'https://ext.nicovideo.jp/thumb/sm33696807',
+                    title: '【第四回ひじき祭】桃太郎【VOICEROID漫才紙芝居】',
+                    body: '',
+                    firsttime: '2018/07/07',
+                    updatetime: '2018/07/13'
+                },
+                {
                     type: 'qiita',
                     url: 'https://qiita.com/mkgask/items/d984f7f4d94cc39d8e3c',
                     image: require('@/images/qiita-square.png'),
@@ -131,6 +141,36 @@ export default {
                     body: '音声合成ソフトCevioと出自が近しい名工大のOpen JTalkが気になって触ってみた履歴です。',
                     firsttime: '2017/09/09',
                     updatetime: '2017/09/10'
+                },
+                {
+                    type: 'niconico',
+                    url: 'https://www.nicovideo.jp/watch/sm31857256',
+                    image: '',
+                    src: 'https://ext.nicovideo.jp/thumb/sm31857256',
+                    title: '【のりフェス2】琴葉姉妹のJavaScript初めて触ろう 解説編',
+                    body: '',
+                    firsttime: '2017/09/03',
+                    updatetime: ''
+                },
+                {
+                    type: 'niconico',
+                    url: 'https://www.nicovideo.jp/watch/sm31766192',
+                    image: '',
+                    src: 'https://ext.nicovideo.jp/thumb/sm31766192',
+                    title: '【第三回ひじき祭】琴葉姉妹の1分間JavaScript初めて触ろう',
+                    body: '',
+                    firsttime: '2017/09/03',
+                    updatetime: ''
+                },
+                {
+                    type: 'niconico',
+                    url: 'https://www.nicovideo.jp/watch/sm31703198',
+                    image: '',
+                    src: 'https://ext.nicovideo.jp/thumb/sm31703198',
+                    title: '【第三回ひじき祭CM】琴葉姉妹の1分間JavaScript初めて触ろう',
+                    body: '',
+                    firsttime: '2017/08/07',
+                    updatetime: ''
                 },
                 {
                     type: 'qiita',
