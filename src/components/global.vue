@@ -27,7 +27,7 @@ span
 .section_body
     display: flex
     justify-content: left
-    align-items: center
+    align-items: top
     flex-wrap: wrap
     overflow: scroll
     height: 100%
