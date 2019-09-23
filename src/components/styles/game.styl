@@ -20,11 +20,14 @@
     font-weight bold
 
 .introduction_box
-    margin 2em 0
+    margin 2em 0 0
     width 100%
     text-align center
 
 .weapons_image_box
+    margin 2em 0 0
+    width 100%
+
 .weapons_image
     width 100%
 
@@ -62,7 +65,7 @@
     display flex
     justify-content center
     width 100%
-    margin 2em 0
+    margin 2em 0 0
 
 .ss
     width 31.334%
@@ -136,14 +139,22 @@
     max-width 100%
 
 .lets_play
-    margin 2em 0
+    margin 2em 0 0
     width 100%
     text-align center
 
+.lets_play:nth-child(10)
+    padding 0 0 2em
+
 .play_button
     padding 0.5em 2em
+    border 2px #942186 solid
     border-radius 1.25em
     background-color #942186
     color #fff
-    font-size: 1.5em
+    font-size 1.5em
     text-decoration none
+
+.play_button:hover
+    background-color #fff
+    color #942186
