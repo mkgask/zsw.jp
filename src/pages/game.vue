@@ -59,13 +59,13 @@
                         | ・次のルームへ移動する時、左右のドアのどちらを選ぶかで敵に変化があります。<br>
 
             lightboxlike.ss_box(:image="lightboxlike_image",:show="lightboxlike_show",@onLightboxlikeClose="onLightboxlikeClose")
-                span.ss.ss1
+                span.ss_image_box
                     img.ss_image(:src="require('@/images/UniDark/ss1.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss1.jpg'))")
-                span.ss.ss2
+                span.ss_image_box
                     img.ss_image(:src="require('@/images/UniDark/ss2.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss2.jpg'))")
-                span.ss.ss3
+                span.ss_image_box
                     img.ss_image(:src="require('@/images/UniDark/ss3.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss3.jpg'))")
-                span.ss.ss4
+                span.ss_image_box
                     img.ss_image(:src="require('@/images/UniDark/ss4.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss4.jpg'))")
 
             div.lets_play
