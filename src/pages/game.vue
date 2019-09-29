@@ -58,33 +58,35 @@
                     span.tips_val
                         | ・次のルームへ移動する時、左右のドアのどちらを選ぶかで敵に変化があります。<br>
 
-            div.ss_box
-                span.ss.ss1(@click="onLightboxlikeOpen(require('@/images/UniDark/ss1.jpg'))")
-                    img.ss_image(:src="require('@/images/UniDark/ss1.jpg')")
-                span.ss.ss2(@click="onLightboxlikeOpen(require('@/images/UniDark/ss2.jpg'))")
-                    img.ss_image(:src="require('@/images/UniDark/ss2.jpg')")
-                span.ss.ss3(@click="onLightboxlikeOpen(require('@/images/UniDark/ss3.jpg'))")
-                    img.ss_image(:src="require('@/images/UniDark/ss3.jpg')")
-                span.ss.ss4(@click="onLightboxlikeOpen(require('@/images/UniDark/ss4.jpg'))")
-                    img.ss_image(:src="require('@/images/UniDark/ss4.jpg')")
+            lightboxlike.ss_box(:image="lightboxlike_image",:show="lightboxlike_show",@onLightboxlikeClose="onLightboxlikeClose")
+                span.ss.ss1
+                    img.ss_image(:src="require('@/images/UniDark/ss1.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss1.jpg'))")
+                span.ss.ss2
+                    img.ss_image(:src="require('@/images/UniDark/ss2.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss2.jpg'))")
+                span.ss.ss3
+                    img.ss_image(:src="require('@/images/UniDark/ss3.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss3.jpg'))")
+                span.ss.ss4
+                    img.ss_image(:src="require('@/images/UniDark/ss4.jpg')",@click="onLightboxlikeOpen(require('@/images/UniDark/ss4.jpg'))")
 
             div.lets_play
                 a.play_button(href="https://unityroom.com/games/unitychan-with-darkmaze") Unityroomで遊べます
-
-            div.lightboxlike(v-show="lightboxlike_show",@click="onLightboxlikeClose")
-                span.lightboxlike_close_button
-                img.lightboxlike_image(:src="lightboxlike_image")
 
 </template>
 
 <style scoped lang="stylus" src="../components/styles/game.styl"></style>
 
 <script lang="ts">
+import lightboxlike from '../components/utils/lightboxlike.vue'
+
 export default {
+    components: {
+        'lightboxlike': lightboxlike
+    },
+
     data: function () {
         return {
-            lightboxlike_show: false,
-            lightboxlike_image: ''
+            'lightboxlike_show': false,
+            'lightboxlike_image': ''
         }
     },
 
