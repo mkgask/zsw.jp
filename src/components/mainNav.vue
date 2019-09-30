@@ -12,17 +12,23 @@
             @click="select('game')"
         ) Game
 
-        v-btn.nav_movie(
-            ripple=true, block=true,
-            :class="class_movie"
-            @click="select('movie')"
-        ) Movie
-
         v-btn.nav_app(
             ripple=true, block=true,
             :class="class_app"
             @click="select('app')"
         ) App
+
+        v-btn.nav_service(
+            ripple=true, block=true,
+            :class="class_service"
+            @click="select('service')"
+        ) Service
+
+        v-btn.nav_movie(
+            ripple=true, block=true,
+            :class="class_movie"
+            @click="select('movie')"
+        ) Movie
 
         v-btn.nav_link(
             ripple=true, block=true,
@@ -51,8 +57,9 @@ for key, styles in contents
 <style scoped lang="stylus" src="./styles/mainNav.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_latest.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_game.styl"></style>
-<style scoped lang="stylus" src="./styles/mainNav_movie.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_app.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_service.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_movie.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_link.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_menu.styl"></style>
 
@@ -77,15 +84,21 @@ export default {
             return 'deactive'
         },
 
-        class_movie: function () {
-            if (this.selected === 'menu') return 'default'
-            if (this.selected === 'movie') return 'active'
-            return 'deactive'
-        },
-
         class_app: function () {
             if (this.selected === 'menu') return 'default'
             if (this.selected === 'app') return 'active'
+            return 'deactive'
+        },
+
+        class_service: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'service') return 'active'
+            return 'deactive'
+        },
+
+        class_movie: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'movie') return 'active'
             return 'deactive'
         },
 
