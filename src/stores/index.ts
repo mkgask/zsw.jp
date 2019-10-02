@@ -44,9 +44,99 @@ export default new Vuex.Store({
                 image: require('@/images/GitHub_Logo.png'),
                 src: '',
                 title: 'UnityChan-with-DarkMaze',
-                body: 'Unityちゃんと闇の迷宮のコード（一部。公開できるもののみ）です。UniRxとDDDを分かる範囲で利用しています。',
+                body: 'Unityちゃんと闇の迷宮のコード（一部。公開できるもののみ）です。UniRxとDDDの戦術面を分かる範囲で利用しています。',
                 firsttime: '2019/03/10',
                 updatetime: ''
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/fa307811da6d9d76bc97',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Unity 3Dでアニメーションを考慮したジャンプ その2（アニメーションを分割して溜め大ジャンプ）',
+                body: '溜め大ジャンプの仕組みを確立しておきたくて記事にまとめたものです。',
+                firsttime: '2018/10/29',
+                updatetime: '2019/06/22'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/77c9d84cd1ee4671811a',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'kivyのドロップダウンリストはDrop-Down ListではなくSpinnerで作る',
+                body: '割と初歩的な間違いのようだったので忘れないためと戒めのために記事にしたものです。',
+                firsttime: '2018/10/27',
+                updatetime: '2018/10/27'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/e660fc802b2ec994fb5f',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Unity 3Dでアニメーションを考慮したジャンプ その1（単アニメーション）',
+                body: '溜め大ジャンプにする前に普通のジャンプをまず作ってみたものです。',
+                firsttime: '2018/09/23',
+                updatetime: '2018/09/23'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/f8c9ba7757d3c20f18b3',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Unity PlayerPrefs用にシリアライズ/文字列化する為のパフォーマンステスト',
+                body: 'ローカルストレージにデータを保存するにあたってのパフォーマンステスト結果です。',
+                firsttime: '2018/09/17',
+                updatetime: ''
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/6d04d0be13cc0b14d4fb',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Unity 3DでUpdateとFixedUpdate間のタイミングを考慮したジャンプ（基礎）',
+                body: 'ジャンプ処理を作るにあたってUpdateとFixedUpdate間のタイミングについて調査検討実験した結果です。',
+                firsttime: '2018/09/02',
+                updatetime: '2019/06/21'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/22a9fa9b4cdfcd500b77',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Python kivyで画面切り替えの最小構成 その2',
+                body: 'Perm次バージョンの事前調査としてkivyでの画面切り替えを調査した記事です。',
+                firsttime: '2018/09/01',
+                updatetime: ''
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/836ec9e22ff81db9818d',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Python kivyで画面切り替えの最小構成',
+                body: 'Perm次バージョンの事前調査でkivyでの画面切り替えを調査した記事です。',
+                firsttime: '2018/08/25',
+                updatetime: ''
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/d741578efb13aac7db0e',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Pythonランチャ（Windows版のみ）',
+                body: 'Pythonランチャの存在を知らなかったので調べて試してみた記事です。',
+                firsttime: '2018/08/25',
+                updatetime: ''
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/793913b61135fcd4c788',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Pythonのkivyで音楽プレイヤー その3 リピート再生',
+                body: 'Perm次バージョンのための事前調査で、音楽のリピート再生の方法を調べて試してみた記事です。',
+                firsttime: '2018/08/11',
+                updatetime: '2018/08/18'
             },
             {
                 type: 'niconico',
@@ -94,7 +184,7 @@ export default new Vuex.Store({
                 image: require('@/images/qiita-square.png'),
                 src: '',
                 title: 'docker-compose（dockerで十分）でGitHub Pagesローカル開発環境',
-                body: '本サイトを作るに当たり事前調査したのですが結局使わなかったやつです。',
+                body: '本サイトを作るに当たり事前調査したのですが結局Vue CLI 3を使うことにしたので使わなかったやつです。',
                 firsttime: '2018/02/24',
                 updatetime: '2019/05/18'
             },
@@ -149,6 +239,16 @@ export default new Vuex.Store({
                 updatetime: '2018/08/25'
             },
             {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm31085640',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm31085640',
+                title: '【MMD】琴葉姉妹でWe are POP☆CANDY!',
+                body: '',
+                firsttime: '2017/04/25',
+                updatetime: ''
+            },
+            {
                 type: 'app',
                 url: 'zsw.jp/software/perm',
                 image: require('@/images/Perm/ss1.png'),
@@ -157,6 +257,36 @@ export default new Vuex.Store({
                 body: 'プレイリスト再生型アラーム付きメディアプレイヤーです。ペルムと読みます。Qt/C++製です。',
                 firsttime: '2013/02/10',
                 updatetime: '2008/11/08'
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm10304289',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm10304289',
+                title: '東方史夢祭～春の大訪問祭～【永夜抄編　弐】',
+                body: '',
+                firsttime: '2010/04/06',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm4190865',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm4190865',
+                title: 'Sims2でウサテイ　～てゐ増し増し～',
+                body: '',
+                firsttime: '2008/08/05',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1230948',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1230948',
+                title: '【音楽系MAD】↑らきすた☆ろけっと↑【最終回記念】',
+                body: '',
+                firsttime: '2007/10/08',
+                updatetime: ''
             }
         ]
     },
