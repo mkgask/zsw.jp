@@ -160,6 +160,26 @@ export default new Vuex.Store({
             },
             {
                 type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/0d581bf6d25ecd84a07b',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'kvファイルに日本語が混ざるとUnicodeDecodeError',
+                body: '毎回同じエラーを修正することになるだろうと感じたのでメモ書きです。',
+                firsttime: '2018/06/23',
+                updatetime: '2018/09/15'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/f2b0a8a23d0d11608f45',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'PythonのKivyで音楽プレイヤー その2 ファイル分割',
+                body: 'kivyでのプロジェクト内のファイル分割方法の調査結果です。',
+                firsttime: '2018/06/09',
+                updatetime: ''
+            },
+            {
+                type: 'qiita',
                 url: 'https://qiita.com/mkgask/items/dcd0f173998168fe5614',
                 image: require('@/images/qiita-square.png'),
                 src: '',
@@ -187,6 +207,36 @@ export default new Vuex.Store({
                 body: '本サイトを作るに当たり事前調査したのですが結局Vue CLI 3を使うことにしたので使わなかったやつです。',
                 firsttime: '2018/02/24',
                 updatetime: '2019/05/18'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/097188092d9ae98684b7',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'UniRx.MessageBrokerでメッセージの待ち合わせ（WhenAll）',
+                body: 'Unity C#の非同期ライブラリUniRxの使い方について調査した結果です。',
+                firsttime: '2018/02/10',
+                updatetime: '2018/02/13'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/e332d8576b5cc41ddc7a',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: '自動生成Terrainをプレイヤーキャラの移動で有効無効切り替え',
+                body: '初期生成したTerrainは有効無効の切り替えだけしたい、でも範囲外は生成したい、という内容を試した結果です。',
+                firsttime: '2017/12/08',
+                updatetime: '2017/12/09'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/cf503d394e592fdb4dbb',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'プレイヤーキャラの移動にあわせたリアルタイムTerrain生成破棄',
+                body: 'Minecraftや7dtdのような無限ワールドでのキャラ移動に伴うワールド読み込み方法を試した結果です。',
+                firsttime: '2017/12/08',
+                updatetime: '2017/12/09'
             },
             {
                 type: 'qiita',
@@ -249,14 +299,54 @@ export default new Vuex.Store({
                 updatetime: ''
             },
             {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/9d1e852f275eda0da1c0',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'LaraDock起動用シェルスクリプト',
+                body: 'まだDockerToolsを使っていた頃でDockerの起動が不安定だったので、軽いエラーなら起動できるようにスクリプトにしたものです。',
+                firsttime: '2016/08/05',
+                updatetime: '2016/09/30'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/30c716672801b7d79a38',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'LaraDockでLaravel-5-boilerplateを使う',
+                body: 'Laravelをそのまま使うよりLaravel-5-boilerplateを使いたい、でDockerに乗せるための調査をした結果です。',
+                firsttime: '2016/07/03',
+                updatetime: '2016/07/06'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/632531ec73e34db418dd',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'laravel-5-boilerplateの言語切り替え処理',
+                body: 'Laravel-5-boilerplateの日本語対応をするのに、どこを変更すれば良いかの調査結果です。',
+                firsttime: '2015/11/05',
+                updatetime: '2015/11/08'
+            },
+            {
+                type: 'qiita',
+                url: 'https://qiita.com/mkgask/items/c4e3b92e69f13482dff9',
+                image: require('@/images/qiita-square.png'),
+                src: '',
+                title: 'Laravel開発環境をhhvm + nginx + Debian + Docker + Vagrantで作る',
+                body: '当時欲しかったものの詰め合わせキットを作ってみたまとめです。',
+                firsttime: '2015/09/16',
+                updatetime: '2018/01/09'
+            },
+            {
                 type: 'app',
                 url: 'zsw.jp/software/perm',
                 image: require('@/images/Perm/ss1.png'),
                 src: '',
                 title: 'Perm',
                 body: 'プレイリスト再生型アラーム付きメディアプレイヤーです。ペルムと読みます。Qt/C++製です。',
-                firsttime: '2013/02/10',
-                updatetime: '2008/11/08'
+                firsttime: '2008/11/08',
+                updatetime: '2013/02/10'
             },
             {
                 type: 'niconico',
@@ -286,6 +376,56 @@ export default new Vuex.Store({
                 title: '【音楽系MAD】↑らきすた☆ろけっと↑【最終回記念】',
                 body: '',
                 firsttime: '2007/10/08',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1139997',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1139997',
+                title: '涼宮ハルヒの憂鬱 First Good-Bye ショートバージョン',
+                body: '',
+                firsttime: '2007/09/25',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1101669',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1101669',
+                title: '魔理沙は大変な13分間耐久を要求していきました',
+                body: '',
+                firsttime: '2007/09/20',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1077031',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1077031',
+                title: '涼宮ハルヒの憂鬱 Lost my music ショートバージョン',
+                body: '',
+                firsttime: '2007/09/17',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1064844',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1064844',
+                title: '涼宮ハルヒの憂鬱 God knows… ショートバージョン',
+                body: '',
+                firsttime: '2007/09/15',
+                updatetime: ''
+            },
+            {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm1024395',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm1024395',
+                title: 'らき☆すた OP 14分間耐久',
+                body: '',
+                firsttime: '2007/09/09',
                 updatetime: ''
             }
         ]
