@@ -11,9 +11,11 @@
                 a.content_link(
                     v-show="content.type != 'niconico'"
                     :href="content.url",
-                    :style="{ backgroundImage: 'url(' + content.image + ')' }"
                 )
-                    span.content_text
+                    span.content_image_box
+                        img.content_image(:src="content.image")
+
+                    span.content_text_box
                         span.content_title {{content.title}}
                         span.content_body {{content.body}}
 
