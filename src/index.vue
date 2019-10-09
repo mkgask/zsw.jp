@@ -11,14 +11,14 @@
     color: #111
 </style>
 
+<style lang="stylus" src="./components/styles/global.styl"></style>
+
 <script lang="ts">
-import global from './components/global.vue'
 import mainNav from './components/mainNav.vue'
 import top from './components/top.vue'
 
 export default {
     components: {
-        global: global,
         mainNav: mainNav,
         top: top
     },
