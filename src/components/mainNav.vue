@@ -43,6 +43,8 @@
         ) Menu
 </template>
 
+<style scoped lang="stylus" src="./styles/mainNav.styl"></style>
+
 <style scoped lang="stylus">
 use('utils/yaml.js')
 contents = yaml('src/components/styles/mainNav.yml')
@@ -52,9 +54,25 @@ for key, styles in contents
         right: styles.right
         background: styles.background
         color: styles.color
+
+contents_sp = yaml('src/components/styles/mainNav_sp.yml')
+
+@media (max-width: 850px)
+    for key, styles in contents_sp
+        #nav .nav_{key}
+            right: styles.right
+            bottom: styles.bottom
+            background: styles.background
+            color: styles.color
 </style>
 
-<style scoped lang="stylus" src="./styles/mainNav.styl"></style>
+<style lang="stylus">
+@media (max-width: 850px)
+    .v-btn__content
+        padding-left 5%
+        justify-content left
+</style>
+
 <style scoped lang="stylus" src="./styles/mainNav_latest.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_game.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_app.styl"></style>

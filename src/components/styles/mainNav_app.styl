@@ -30,3 +30,37 @@
     100%
         right: -35%
         opacity: 0
+
+@media (max-width: 850px)
+    #nav .nav_app.default
+        animation: nav_app_default_animate_sp 1.2s
+
+    #nav .nav_app.active
+        animation: nav_app_active_animate_sp 1.2s
+
+    #nav .nav_app.deactive
+        animation: nav_app_deactive_animate_sp 1.2s
+
+    @keyframes nav_app_default_animate_sp
+        0%
+            bottom: 40%
+            opacity: 0
+        100%
+            bottom: 20%
+            opacity: 1
+
+    @keyframes nav_app_active_animate_sp
+        0%
+            bottom: 20%
+            opacity: 1
+        100%
+            bottom: 5%
+            opacity: 1
+
+    @keyframes nav_app_deactive_animate_sp
+        0%
+            bottom: 20%
+            opacity: 1
+        100%
+            bottom: -5%
+            opacity: 0

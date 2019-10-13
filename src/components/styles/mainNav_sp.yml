@@ -1,0 +1,36 @@
+latest:
+    width: 100%
+    right: 0
+    bottom: 30%
+    background: linear-gradient(to right,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)
+    color: '#111'
+game:
+    right: 0
+    bottom: 25%
+    background: linear-gradient(to right,  rgba(255, 96, 96, 1) 0%, rgba(255, 96, 96, 1) 50%, rgba(255, 96, 96, 0) 100%)
+    color: '#fff'
+app:
+    right: 0
+    bottom: 20%
+    background: linear-gradient(to right,  rgba(96, 96, 255, 1) 0%, rgba(96, 96, 255, 1) 50%, rgba(96, 96, 255, 0) 100%)
+    color: '#fff'
+service:
+    right: 0
+    bottom: 15%
+    background: linear-gradient(to right,  rgba(216, 96, 216, 1) 0%, rgba(216, 96, 216, 1) 50%, rgba(216, 96, 216, 0) 100%)
+    color: '#fff'
+movie:
+    right: 0
+    bottom: 10%
+    background: linear-gradient(to right,  rgba(96, 255, 96, 1) 0%, rgba(96, 255, 96, 1) 50%, rgba(96, 255, 96, 0) 100%)
+    color: '#111'
+link:
+    right: 0
+    bottom: 5%
+    background: linear-gradient(to right,  rgba(255, 96, 0, 1) 0%, rgba(255, 96, 0, 1) 50%, rgba(255, 96, 0, 0) 100%)
+    color: '#111'
+menu:
+    right: 0
+    bottom: 0
+    background: linear-gradient(to right,  rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%)
+    color: '#fff'

@@ -30,3 +30,37 @@
     100%
         right: -35%
         opacity: 0
+
+@media (max-width: 850px)
+    #nav .nav_game.default
+        animation: nav_game_default_animate_sp 1.2s
+
+    #nav .nav_game.active
+        animation: nav_game_active_animate_sp 1.2s
+
+    #nav .nav_game.deactive
+        animation: nav_game_deactive_animate_sp 1.2s
+
+    @keyframes nav_game_default_animate_sp
+        0%
+            bottom: 45%
+            opacity: 0
+        100%
+            bottom: 25%
+            opacity: 1
+
+    @keyframes nav_game_active_animate_sp
+        0%
+            bottom: 25%
+            opacity: 1
+        100%
+            bottom: 5%
+            opacity: 1
+
+    @keyframes nav_game_deactive_animate_sp
+        0%
+            bottom: 25%
+            opacity: 1
+        100%
+            bottom: -5%
+            opacity: 0

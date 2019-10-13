@@ -1,22 +1,42 @@
 
 #nav
-    font-family: "Kosugi Maru"
+    font-family "Kosugi Maru"
 
 #nav button
-    position: fixed
-    z-index: 100
-    bottom: 5%
-    text-transform: capitalize
-    width: 100vh
-    max-width: 100vw
-    transform: rotate(-75deg)
-    padding: 1.2em 0
-    font-size: 1.6em
+    position fixed
+    z-index 100
+    bottom 5%
+    text-transform capitalize
+    width 100vh
+    max-width 100vw
+    transform rotate(-75deg)
+    padding 1.2em 0
+    font-size 1.6em
 
 #nav button.active
-    right: -20%
-    opacity: 1
+    display flex
+    right -20%
+    opacity 1
 
 #nav button.deactive
-    right: -30%
-    opacity: 0
+    display flex
+    right -30%
+    opacity 0
+
+@media (max-width: 850px)
+    #nav button
+        z-index 100
+        right 0
+        bottom 0
+        width 100vw
+        max-width 100vw
+        transform none
+        padding 0
+        font-size 1.2em
+
+    #nav button.active
+        right 0
+        bottom: 5%
+
+    #nav button.deactive
+        right 0

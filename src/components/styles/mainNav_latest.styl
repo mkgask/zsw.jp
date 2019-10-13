@@ -30,3 +30,37 @@
     100%
         right: -35%
         opacity: 0
+
+@media (max-width: 850px)
+    #nav .nav_latest.default
+        animation: nav_latest_default_animate_sp 1.2s
+
+    #nav .nav_latest.active
+        animation: nav_latest_active_animate_sp 1.2s
+
+    #nav .nav_latest.deactive
+        animation: nav_latest_deactive_animate_sp 1.2s
+
+    @keyframes nav_latest_default_animate_sp
+        0%
+            bottom: 50%
+            opacity: 0
+        100%
+            bottom: 30%
+            opacity: 1
+
+    @keyframes nav_latest_active_animate_sp
+        0%
+            bottom: 30%
+            opacity: 1
+        100%
+            bottom: 5%
+            opacity: 1
+
+    @keyframes nav_latest_deactive_animate_sp
+        0%
+            bottom: 30%
+            opacity: 1
+        100%
+            bottom: -5%
+            opacity: 0
