@@ -9,24 +9,40 @@
 .section_body
     display flex
     justify-content center
+    flex-wrap wrap
     width 100%
 
 .ss_box
     display flex
     justify-content center
+    flex-wrap wrap
     width 100%
     margin 2em 0 0
     text-align center
 
+.top_line
+    display flex
+    justify-content center
+    flex-wrap wrap
+    width 100%
+
 .app_title_box
+    width 40%
     padding 1em
+    text-align center
 
 .introduction_box
+    width 60%
     padding 1em
 
 .app_title
+    width 100%
     font-size: 2em
     margin-bottom: 0.5em
+
+.introduction
+    width 100%
+    white-space pre-wrap
 
 .ss_image_box
     width 31.334%
@@ -49,3 +65,12 @@
 .download_box .link
     width 100%
     padding 0.5em 0
+
+@media (max-width: 850px)
+    .app_title_box
+        width 96%
+        margin 0 2%
+
+    .introduction_box
+        width 96%
+        margin 0 2%
