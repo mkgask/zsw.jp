@@ -34,6 +34,7 @@
 .control_introduction_box
     display flex
     justify-content center
+    flex-wrap wrap
     width 100%
     margin 2em 0 0
 
@@ -45,6 +46,7 @@
 .tips_box
     display flex
     justify-content center
+    flex-wrap wrap
     width 100%
     margin 2em 0 0
 
@@ -64,6 +66,7 @@
 .ss_box
     display flex
     justify-content center
+    flex-wrap wrap
     width 100%
     margin 2em 0 0
 
@@ -95,3 +98,20 @@
 .play_button:hover
     background-color #fff
     color #942186
+
+@media (max-width: 850px)
+    .control_introduction_key
+    .control_introduction_val
+        width 96%
+        margin 0 2%
+
+    .tip_box
+        width 96%
+        margin 2%
+
+    .ss_box
+        padding 1%
+
+    .ss_image_box
+        width 48%
+        margin 1%
