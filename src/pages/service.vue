@@ -9,14 +9,14 @@
                     span.service_body PCパーツとかそのへんっぽい方のニュースのまとめサイトをまとめてるアンテナサイト
 
             div.service_box
-                a.service_link(href="aqua-antenna.zsw.jp")
+                a.service_link(href="http://aqua-antenna.zsw.jp")
                     span.service_title Aqua-Antenna | 水速
                     span.service_body なんとなく家庭的っぽい感じというか生活感のあるというか、そんな感じの5chまとめサイトをまとめてるアンテナサイト
 
-            div.service_box
-            div.service_box
-            div.service_box
-            div.service_box
+            div.service_box.blank
+            div.service_box.blank
+            div.service_box.blank
+            div.service_box.blank
 
 </template>
 
