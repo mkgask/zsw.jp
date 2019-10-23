@@ -51,7 +51,7 @@ export default {
     },
 
     mounted: function () {
-        this.$data.list = this.$store.getters.get_link_list
+        this.$data.list = this.$store.getters['link/get_list']
     },
 
     methods: {

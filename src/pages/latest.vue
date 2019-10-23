@@ -51,7 +51,7 @@ export default {
     },
 
     mounted: function () {
-        this.$data.list = this.$store.getters.get_latest_list
+        this.$data.list = this.$store.getters['latest/get_list']
     },
 
     methods: {

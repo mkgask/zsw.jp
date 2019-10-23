@@ -127,8 +127,11 @@ export default {
         }
     },
 
-    watch: {
-        '$store.getters.get_route': 'routeUpdate'
+    mounted: function () {
+        this.$store.watch(
+            () => this.$store.getters['routes/get_route'],
+            (val, old) => this.routeUpdate(val)
+        )
     },
 
     methods: {

@@ -35,7 +35,7 @@ export default {
     },
 
     mounted: function () {
-        this.$data.list = this.$store.getters.get_movie_list
+        this.$data.list = this.$store.getters['latest/get_movie_list']
     },
 
     methods: {

@@ -42,7 +42,7 @@ export default {
             route = this.$route.name
         }
 
-        this.$store.commit('route_change', route)
+        this.$store.commit('routes/route_change', route)
     },
 
     watch: {
@@ -51,7 +51,7 @@ export default {
 
     methods: {
         routeUpdate: function (to, from) {
-            this.$store.commit('route_change', to.name)
+            this.$store.commit('routes/route_change', to.name)
         }
     }
 }
