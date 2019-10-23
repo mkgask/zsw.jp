@@ -3,6 +3,10 @@
         div.section_body
             h1.page_title Latest
 
+            div.buttons_box
+                span.button(:class="[mode == 'all' ? 'active' : '']", @click="modeChange('all')") all
+                span.button(:class="[mode == 'pickup' ? 'active' : '']", @click="modeChange('pickup')") pickup
+
             v-card.content_box(
                 v-for="content, index in list"
                 :key="index"
@@ -44,17 +48,35 @@
 export default {
     data: function () {
         return {
-            list: {},
+            all_list: [],
+            pickup_list: [],
+
             show_num: 8,
-            per_page: 8
+            per_page: 8,
+
+            mode: 'all'
+        }
+    },
+
+    computed: {
+        list: function () {
+            if (this.mode === 'all') return this.all_list
+            if (this.mode === 'pickup') return this.pickup_list
+            return []
         }
     },
 
     mounted: function () {
-        this.$data.list = this.$store.getters['latest/get_list']
+        this.$data.all_list = this.$store.getters['latest/get_list']
+        this.$data.pickup_list = this.$store.getters['latest/get_pickup_list']
     },
 
     methods: {
+        modeChange: function (mode) {
+            this.mode = mode
+            this.show_num = this.per_page
+        },
+
         readNext: function () {
             this.show_num += this.per_page
 
