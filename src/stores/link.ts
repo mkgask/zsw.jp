@@ -21,7 +21,7 @@ export default {
                 title: 'GitHub',
                 body: '色々雑多に、書いたものを置いています。',
                 firsttime: '2015/10/22',
-                updatetime: '2019/08/28'
+                updatetime: '随時'
             },
             {
                 type: 'unityroom',
