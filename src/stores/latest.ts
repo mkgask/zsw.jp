@@ -9,9 +9,9 @@ export default {
                 image: require('@/images/GitHub_Logo.png'),
                 src: '',
                 title: 'zsw.jp',
-                body: '本サイトのコードです。DockerでVue CLI 3を利用し静的サイトとして生成しています。Circle Ciを利用し、GitHubへのpushでLint、ビルド、デプロイが自動で行われるようになっています。',
+                body: '本サイトのコードです。DockerでVue CLI 3を利用し静的サイトとして生成しています。Circle CIを利用し、GitHubへのpushでLint、ビルド、デプロイが自動で行われるようになっています。',
                 firsttime: '2019/07/20',
-                updatetime: '',
+                updatetime: '随時',
                 pickup: true
             },
             {
