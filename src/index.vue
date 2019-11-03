@@ -60,7 +60,7 @@ export default {
             if (typeof route.meta.title !== 'undefined') this.changePageTitle(route.meta.title)
             if (typeof route.meta.description !== 'undefined') this.changePageDescription(route.meta.description)
             if (typeof route.name !== 'undefined') this.changeOgUrl(route.name)
-            if (typeof route.meta.image !== 'undefined') this.setContentMetaProperty('og:image', '/' + route.meta.image)
+            if (typeof route.meta.image !== 'undefined') this.changeOgImage(route.meta.image)
         },
 
         changePageTitle: function (s) {
@@ -87,6 +87,12 @@ export default {
                 this.setContentMetaProperty('og:url', window.location.origin + '/#/' + s)
             } else {
                 this.setContentMetaProperty('og:url', window.location.origin)
+            }
+        },
+
+        changeOgImage: function (s) {
+            if (s && s !== 'index') {
+                this.setContentMetaProperty('og:image', window.location.origin + '/' + s)
             }
         },
 
