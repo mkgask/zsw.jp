@@ -43,7 +43,7 @@ export default {
         }
 
         this.$store.commit('routes/route_change', route)
-        this.changePageTitle(route)
+        this.changeSiteMetaData(this.$route)
     },
 
     watch: {
@@ -52,8 +52,15 @@ export default {
 
     methods: {
         routeUpdate: function (to, from) {
-            this.changePageTitle(to.name)
+            this.changeSiteMetaData(to)
             this.$store.commit('routes/route_change', to.name)
+        },
+
+        changeSiteMetaData: function (route) {
+            if (typeof route.meta.title !== 'undefined') this.changePageTitle(route.meta.title)
+            if (typeof route.meta.description !== 'undefined') this.changePageDescription(route.meta.description)
+            if (typeof route.name !== 'undefined') this.changeOgUrl(route.name)
+            if (typeof route.meta.image !== 'undefined') this.setContentMetaProperty('og:image', '/' + route.meta.image)
         },
 
         changePageTitle: function (s) {
@@ -67,6 +74,24 @@ export default {
             }
 
             document.title = page_title
+            this.setContentMetaProperty('og:title', page_title)
+        },
+
+        changePageDescription: function (s) {
+            this.setContentMetaProperty('og:description', s)
+            document.querySelector('meta[name=description]').setAttribute('content', s)
+        },
+
+        changeOgUrl: function (s) {
+            if (s && s !== 'index') {
+                this.setContentMetaProperty('og:url', window.location.origin + '/#/' + s)
+            } else {
+                this.setContentMetaProperty('og:url', window.location.origin)
+            }
+        },
+
+        setContentMetaProperty: function (property_name, content) {
+            document.querySelector("meta[property='" + property_name + "']").setAttribute('content', content)
         }
     }
 

@@ -3,9 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="index, follow">
 
         <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@mkgask" />
+        <meta name="twitter:creator" content="@mkgask" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="zsw.jp" />
+        <meta property="og:url" content="https://zsw.jp" />
+        <meta property="og:image" content="サムネイル画像のURL" />
+        <meta property="og:site_name" content="zsw.jp" />
+        <meta property="og:description" content="みかげあすか @mkgask のポートフォリオサイトです。" />
 
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kosugi+Maru&display=swap">
