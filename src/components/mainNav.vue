@@ -141,19 +141,6 @@ export default {
 
         routeUpdate: function (s) {
             this.selected = s
-            this.change_page_title(s)
-        },
-
-        change_page_title: function (s) {
-            let title = document.title
-            let pos = title.indexOf(' - ')
-
-            if (pos < 0) {
-                document.title = s + ' - ' + document.title
-                return
-            }
-
-            document.title = s + title.substr(pos)
         }
     }
 }

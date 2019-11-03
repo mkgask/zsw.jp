@@ -43,6 +43,7 @@ export default {
         }
 
         this.$store.commit('routes/route_change', route)
+        this.changePageTitle(route)
     },
 
     watch: {
@@ -51,8 +52,23 @@ export default {
 
     methods: {
         routeUpdate: function (to, from) {
+            this.changePageTitle(to.name)
             this.$store.commit('routes/route_change', to.name)
+        },
+
+        changePageTitle: function (s) {
+            let page_title = document.title
+            let pos = page_title.indexOf(' - ')
+
+            if (pos < 0) {
+                page_title = s + ' - ' + page_title
+            } else {
+                page_title = s + page_title.substr(pos)
+            }
+
+            document.title = page_title
         }
     }
+
 }
 </script>
