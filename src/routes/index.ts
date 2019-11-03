@@ -16,7 +16,6 @@ export default new VueRouter({
         {
             path: '/',
             component: menu,
-            name: 'index',
 
             meta: {
                 title: 'Index',
