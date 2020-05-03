@@ -4,6 +4,17 @@ export default {
     state: {
         list: [
             {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm36731582',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm36731582',
+                title: '【琴葉姉妹6周年】Bloom Cloud【半MMD】',
+                body: '',
+                firsttime: '2020/04/25',
+                updatetime: '',
+                pickup: true
+            },
+            {
                 type: 'github',
                 url: 'https://github.com/mkgask/zsw.jp',
                 image: require('@/images/GitHub_Logo.png'),
