@@ -1,5 +1,7 @@
 <template lang="pug">
-    nav#nav
+    nav#nav(
+        :class="[isMenuEnabled ? 'active' : 'inactive']"
+    )
         v-btn.nav_latest(
             ripple=true, block=true,
             :class="class_latest"
@@ -85,7 +87,9 @@ contents_sp = yaml('src/components/styles/mainNav_sp.yml')
 export default {
     data: function () {
         return {
-            selected: 'menu'
+            isMenuEnabled: false,
+            selected: 'menu',
+            prev_selected: ''
         }
     },
 
@@ -130,17 +134,33 @@ export default {
     mounted: function () {
         this.$store.watch(
             () => this.$store.getters['routes/get_route'],
-            (val, old) => this.routeUpdate(val)
+            (val, old) => {
+                this.prev_selected = val
+                this.routeUpdate(val)
+            }
         )
+
+        this.routeUpdate(this.$store.getters['routes/get_route'])
     },
 
     methods: {
         select: function (s = '') {
+            if (s === 'menu') {
+                this.routeUpdate(s)
+                return
+            }
+
             this.$router.push(s)
+        },
+
+        menuEnable: function () {
+            this.isMenuEnabled = !this.isMenuEnabled
+            if (!this.isMenuEnabled) this.selected = this.prev_selected
         },
 
         routeUpdate: function (s) {
             this.selected = s
+            this.menuEnable()
         }
     }
 }
