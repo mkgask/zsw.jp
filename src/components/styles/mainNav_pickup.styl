@@ -1,0 +1,66 @@
+#nav .nav_pickup.default
+    animation: nav_pickup_default_animate 1.2s
+
+#nav .nav_pickup.active
+    animation: nav_pickup_active_animate 1.2s
+
+#nav .nav_pickup.deactive
+    animation: nav_pickup_deactive_animate 1.2s
+
+@keyframes nav_pickup_default_animate
+    0%
+        right: 20%
+        opacity: 0
+    100%
+        right: -10%
+        opacity: 1
+
+@keyframes nav_pickup_active_animate
+    0%
+        right: -10%
+        opacity: 1
+    100%
+        right: -20%
+        opacity: 1
+
+@keyframes nav_pickup_deactive_animate
+    0%
+        right: -10%
+        opacity: 1
+    100%
+        right: -35%
+        opacity: 0
+
+@media (max-width: 850px)
+    #nav .nav_pickup.default
+        animation: nav_pickup_default_animate_sp 1.2s
+
+    #nav .nav_pickup.active
+        animation: nav_pickup_active_animate_sp 1.2s
+
+    #nav .nav_pickup.deactive
+        animation: nav_pickup_deactive_animate_sp 1.2s
+
+    @keyframes nav_pickup_default_animate_sp
+        0%
+            bottom: 252px
+            opacity: 0
+        100%
+            bottom: 108px
+            opacity: 1
+
+    @keyframes nav_pickup_active_animate_sp
+        0%
+            bottom: 108px
+            opacity: 1
+        100%
+            bottom: 36px
+            opacity: 1
+
+    @keyframes nav_pickup_deactive_animate_sp
+        0%
+            bottom: 108px
+            opacity: 1
+        100%
+            bottom: -5%
+            opacity: 0

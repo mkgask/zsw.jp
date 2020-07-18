@@ -1,7 +1,7 @@
 <template lang="pug">
-    section#latest.section
+    section#link.section
         div.section_body
-            h1.page_title Latest
+            h1.page_title Pickup
 
             v-card.content_box(
                 v-for="content, index in list"
@@ -37,37 +37,23 @@
 
 </template>
 
-<style scoped lang="stylus" src="../components/styles/latest.styl"></style>
+<style scoped lang="stylus" src="../components/styles/pickup.styl"></style>
 
 <script lang="ts">
-
 export default {
     data: function () {
         return {
-            all_list: [],
-            pickup_list: [],
-
+            list: {},
             show_num: 8,
-            per_page: 8,
-        }
-    },
-
-    computed: {
-        list: function () {
-            return this.all_list
+            per_page: 8
         }
     },
 
     mounted: function () {
-        this.$data.all_list = this.$store.getters['latest/get_list']
+        this.$data.list = this.$store.getters['latest/get_pickup_list']
     },
 
     methods: {
-        modeChange: function (mode) {
-            this.mode = mode
-            this.show_num = this.per_page
-        },
-
         readNext: function () {
             this.show_num += this.per_page
 

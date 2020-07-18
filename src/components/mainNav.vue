@@ -2,6 +2,12 @@
     nav#nav(
         :class="[isMenuEnabled ? 'active' : 'inactive']"
     )
+        v-btn.nav_pickup(
+            ripple=true, block=true,
+            :class="class_pickup"
+            @click="select('pickup')"
+        ) Pickup
+
         v-btn.nav_latest(
             ripple=true, block=true,
             :class="class_latest"
@@ -19,12 +25,6 @@
             :class="class_app"
             @click="select('app')"
         ) App
-
-        v-btn.nav_service(
-            ripple=true, block=true,
-            :class="class_service"
-            @click="select('service')"
-        ) Service
 
         v-btn.nav_movie(
             ripple=true, block=true,
@@ -79,6 +79,7 @@ contents_sp = yaml('src/components/styles/mainNav_sp.yml')
 <style scoped lang="stylus" src="./styles/mainNav_game.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_app.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_service.styl"></style>
+<style scoped lang="stylus" src="./styles/mainNav_pickup.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_movie.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_link.styl"></style>
 <style scoped lang="stylus" src="./styles/mainNav_menu.styl"></style>
@@ -115,6 +116,12 @@ export default {
         class_service: function () {
             if (this.selected === 'menu') return 'default'
             if (this.selected === 'service') return 'active'
+            return 'deactive'
+        },
+
+        class_pickup: function () {
+            if (this.selected === 'menu') return 'default'
+            if (this.selected === 'pickup') return 'active'
             return 'deactive'
         },
 

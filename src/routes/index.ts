@@ -8,6 +8,7 @@ import game from '../pages/game.vue'
 import movie from '../pages/movie.vue'
 import app from '../pages/app.vue'
 import service from '../pages/service.vue'
+import pickup from '../pages/pickup.vue'
 
 Vue.use(VueRouter)
 
@@ -92,6 +93,18 @@ export default new VueRouter({
             meta: {
                 title: 'Service',
                 description: '公開済みの製作したwebサービスの一覧です。',
+                image: require('@/images/ogp/ogp.jpg')
+            }
+        },
+
+        {
+            path: '/pickup',
+            component: pickup,
+            name: 'pickup',
+
+            meta: {
+                title: 'Pickup',
+                description: '特に見て欲しいものをピックアップした一覧です。',
                 image: require('@/images/ogp/ogp.jpg')
             }
         },
