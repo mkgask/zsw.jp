@@ -12,7 +12,9 @@
             ripple=true, block=true,
             :class="class_latest"
             @click="select('latest')"
-        ) Latest
+        )
+            span.main Latest
+            span.sub (All)
 
         v-btn.nav_game(
             ripple=true, block=true,

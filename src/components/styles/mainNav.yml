@@ -1,22 +1,18 @@
-latest:
+pickup:
     right: 5%
+    background: linear-gradient(to right,  rgba(216, 96, 216, 1) 0%, rgba(216, 96, 216, 1) 50%, rgba(216, 96, 216, 0) 100%)
+    color: '#fff'
+latest:
+    right: 0%
     background: linear-gradient(to right,  rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%)
     color: '#111'
 game:
-    right: 0%
+    right: -5%
     background: linear-gradient(to right,  rgba(255, 96, 96, 1) 0%, rgba(255, 96, 96, 1) 50%, rgba(255, 96, 96, 0) 100%)
     color: '#fff'
 app:
-    right: -5%
+    right: -10%
     background: linear-gradient(to right,  rgba(96, 96, 255, 1) 0%, rgba(96, 96, 255, 1) 50%, rgba(96, 96, 255, 0) 100%)
-    color: '#fff'
-service:
-    right: -10%
-    background: linear-gradient(to right,  rgba(216, 96, 216, 1) 0%, rgba(216, 96, 216, 1) 50%, rgba(216, 96, 216, 0) 100%)
-    color: '#fff'
-pickup:
-    right: -10%
-    background: linear-gradient(to right,  rgba(216, 96, 216, 1) 0%, rgba(216, 96, 216, 1) 50%, rgba(216, 96, 216, 0) 100%)
     color: '#fff'
 movie:
     right: -15%
