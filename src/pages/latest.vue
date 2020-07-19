@@ -48,7 +48,7 @@ export default {
             pickup_list: [],
 
             show_num: 8,
-            per_page: 8,
+            per_page: 8
         }
     },
 
