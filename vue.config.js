@@ -14,7 +14,7 @@ module.exports = {
 
         docs: {
             entry: 'src/docs.ts',
-            template: 'docs/index.html',
+            template: 'docs/index.html'
         }
     },
 
