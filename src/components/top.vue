@@ -2,7 +2,7 @@
     <v-parallax id="top" :height="windowHeight" :src="require('@/images/starlight.jpg')" v-resize="onWindowResize">
         section.top_box(:class="class_top")
             h1.site_tile zsw.jp
-            span.site_description 本サイトは みかげあすか のポートフォリオサイトです。
+            span.site_description 本サイトは みかげあすか の創作物展示サイトです。
     </v-parallax>
 </template>
 

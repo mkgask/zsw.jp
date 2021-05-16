@@ -7,8 +7,14 @@ module.exports = {
         index: {
             entry: 'src/index.ts',
             template: 'src/index.template.html',
-            title: 'zsw.jp - @mkgask web site.',
+            title: 'zsw.jp - mkgask web site.',
+            description: 'みかげあすかの創作物展示サイトです。',
             filename: 'index.html'
+        },
+
+        docs: {
+            entry: 'src/docs.ts',
+            template: 'docs/index.html',
         }
     },
 
