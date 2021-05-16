@@ -32,7 +32,7 @@ jobs:
       - run: mkdir docs/.circleci
       - run: cp deploy_gh-pages/circleci_config.yml docs/.circleci/config.yml
       - run: cp CNAME docs/CNAME
-      - run: npm run deploy
+      - run: NODE_DEBUG=gh-pages npm run deploy
 workflows:
   version: 2
   lint-build-deploy:
