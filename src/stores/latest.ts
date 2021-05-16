@@ -5,6 +5,17 @@ export default {
         list: [
             {
                 type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm38632039',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm38632039',
+                title: '【琴葉姉妹7周年】翼をください【SynthVアカペラ】',
+                body: '',
+                firsttime: '2021/04/25',
+                updatetime: '',
+                pickup: true
+            },
+            {
+                type: 'niconico',
                 url: 'https://www.nicovideo.jp/watch/sm36731582',
                 image: '',
                 src: 'https://ext.nicovideo.jp/thumb/sm36731582',
