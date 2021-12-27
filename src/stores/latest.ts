@@ -4,6 +4,17 @@ export default {
     state: {
         list: [
             {
+                type: 'github',
+                url: 'https://github.com/mkgask/7dtd-NoTrader-ModPack',
+                image: require('@/images/GitHub_Logo.png'),
+                src: '',
+                title: '7DaysToDie No Trader Mod Pack',
+                body: '7DaysToDieというサバイバルゾンビホードクラフトゲームのゲーム中からトレーダーの存在を消すModパックです。',
+                firsttime: '2021/12/07',
+                updatetime: '2021/12/25',
+                pickup: true
+            },
+            {
                 type: 'niconico',
                 url: 'https://www.nicovideo.jp/watch/sm38632039',
                 image: '',
