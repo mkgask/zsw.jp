@@ -15,7 +15,7 @@
         "@vue/cli-service": "^4.5.13",
         "acorn": "^6.4.2",
         "kind-of": "^6.0.3",
-        "minimist": "^1.2.5",
+        "minimist": "^1.2.6",
         "npm-check-updates": "^11.5.13",
         "pug": "^3.0.2",
         "pug-plain-loader": "^1.1.0",
