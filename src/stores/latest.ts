@@ -4,6 +4,17 @@ export default {
     state: {
         list: [
             {
+                type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm40370661',
+                image: '',
+                src: 'https://www.nicovideo.jp/watch/sm40370661',
+                title: '【琴葉姉妹8周年】モモノネ【SynthVカバー】',
+                body: '',
+                firsttime: '2022/04/25',
+                updatetime: '',
+                pickup: true
+            },
+            {
                 type: 'github',
                 url: 'https://github.com/mkgask/7dtd-NoTrader-ModPack',
                 image: require('@/images/GitHub_Logo.png'),
