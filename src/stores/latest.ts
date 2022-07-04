@@ -7,7 +7,7 @@ export default {
                 type: 'niconico',
                 url: 'https://www.nicovideo.jp/watch/sm40370661',
                 image: '',
-                src: 'https://www.nicovideo.jp/watch/sm40370661',
+                src: 'https://ext.nicovideo.jp/thumb/sm40370661',
                 title: '【琴葉姉妹8周年】モモノネ【SynthVカバー】',
                 body: '',
                 firsttime: '2022/04/25',
