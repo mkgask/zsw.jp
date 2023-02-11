@@ -16,7 +16,7 @@
         "acorn": "^6.4.2",
         "kind-of": "^6.0.3",
         "minimist": "^1.2.5",
-        "npm-check-updates": "^11.5.13",
+        "npm-check-updates": "^16.7.4",
         "pug": "^3.0.2",
         "pug-plain-loader": "^1.1.0",
         "querystringify": "^2.2.0",
