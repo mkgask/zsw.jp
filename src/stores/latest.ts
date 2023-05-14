@@ -5,6 +5,17 @@ export default {
         list: [
             {
                 type: 'niconico',
+                url: 'https://www.nicovideo.jp/watch/sm42126263',
+                image: '',
+                src: 'https://ext.nicovideo.jp/thumb/sm42126263',
+                title: '【祝琴葉姉妹9周年】Lunch with me【SynthVカバー】',
+                body: '',
+                firsttime: '2023/04/25',
+                updatetime: '',
+                pickup: true
+            },
+            {
+                type: 'niconico',
                 url: 'https://www.nicovideo.jp/watch/sm40370661',
                 image: '',
                 src: 'https://ext.nicovideo.jp/thumb/sm40370661',
